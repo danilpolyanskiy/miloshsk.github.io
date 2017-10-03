@@ -4,34 +4,19 @@ $(document).ready(function() {
 	wow = new WOW(
 	{
 		mobile: false
-	})
+	});
 	wow.init();
 //Mobile menu
 	$('.hide-menu').click(function() {
-		$(this).toggleClass('active-menu');
-	});
-
-	$('.hide-menu').click(function() {
-		$('.menubar').toggleClass('menubar-mobile')
-	});
-
-	$('.hide-menu').click(function() {
+		$(this).toggleClass('active-menu'),
+		$('.menubar').toggleClass('menubar-mobile'),
 		$('.mainmenu').toggleClass('mainmenu-hide')
 	});
-	$('.mainmenuli').click(function(){
-		$('.menubar').addClass('menubar-mobile')
-	});
 
-//Window resize
-	$(window).resize(function () { 
-		var widthMenu = $('body').innerWidth()
-		if (widthMenu < 722) {
-   			 $('.mainmenu').addClass('mainmenu-hide');
-   			}
-   		else
-   			$('.mainmenu').removeClass('mainmenu-hide');
+	$('.mainmenu-link').click(function() {
+		$('.mainmenu').toggleClass('mainmenu-hide'),
+		$('.hide-menu').toggleClass('active-menu')
 	});
-
 	//Scrolling		   
 	$('ul.mainmenu a').click(function() {
 		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -46,23 +31,17 @@ $(document).ready(function() {
 			}
 		}
 	});
-
+	//Scroll top
+	 $('#home').click(function () {
+        $('body,html').animate({
+           scrollTop: 0
+        }, 800);
+        return false;
+       });
 	//ScrollLink
 	$('.header-button-area').click(function() {
 		var targetOffset = $('section.portfolio').offset().top-105;
 		$('html,body').animate({scrollTop: targetOffset}, 1000);
 	});
-
-
-	$('.button-to-contact').click(function() {
-		var targetOffset = $('section.contact').offset().top -105;
-		$('html,body').animate({scrollTop: targetOffset}, 1000);
-	});
-
-	$('.scroll-button').click(function() {
-		var targetOffset = $('section.about').offset().top -105;
-		$('html,body').animate({scrollTop: targetOffset}, 1000);
-	});
-
 
 });
