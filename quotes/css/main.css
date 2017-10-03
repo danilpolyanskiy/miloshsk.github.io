@@ -49,6 +49,20 @@
   opacity: 0.3; }
 .overlay-show .header-main-menu a:hover {
   opacity: 1; }
+.header-top-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  z-index: 10;
+}
+.header-top-wrapper-scroll {
+  background-color: #929191;
+}
+.header-top-wrapper-color {
+  background-color: transparent;
+}
 .header-logo {
   color: #fff;
   font-size: 30px;
@@ -56,10 +70,19 @@
   text-transform: uppercase;
   background-color: #000;
   padding: 15px 25px;
-  margin-left: 15%;
-  text-decoration: none; }
-.header-logo:hover {
-  background:transparent;
+  text-decoration: none;
+  position: fixed;
+  top: 40px;
+  left: 15%;
+  z-index: 10; }
+.header-logo-scroll {
+  top: 15px;
+  left: 10%;
+  padding: 10px 20px;
+  background-color: #929191;
+}
+.header-logo-display {
+  display: none;
 }
 .header-text {
   position: absolute;
@@ -72,13 +95,17 @@
   font-size: 64px;
   font-weight: bold; }
 .page-header .hide-menu {
-  position: absolute;
+  position: fixed;
   width: 60px;
   height: 60px;
   cursor: pointer;
   right: 15%;
   top: 50px;
-  z-index: 1; }
+  z-index: 10; }
+.page-header .hide-menu-scroll {
+  top: 15px;
+  right: 10%;
+}
 .page-header .hide-menu .hide-line {
   position: absolute;
   display: block;
@@ -101,7 +128,7 @@
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease; }
 .page-header .hide-menu.active-menu {
-  z-index: 1; }
+  z-index: 100; }
 .page-header .hide-menu.active-menu .hide-line-top {
   top: 25px;
   -webkit-transform: rotate(45deg);
@@ -601,13 +628,20 @@
     height: 100vh; }
   .header-logo {
     font-size: 16px; }
+  .page-header .hide-menu {
+    top: 40px;
+  }
+  .page-header .hide-menu-scroll {
+    top: 15px;
+  }
+  .page-header .header-logo {
+    padding: 15px;
+  }
   .header-text {
     top: 40%; }
   .header-text h1 {
     font-size: 70px;
     text-align: center; }
-  .page-header .hide-menu {
-    top: 40px; }
   .overlay-show .header-menu {
     left: 5%; }
   .overlay-show .header-main-menu a {
@@ -668,8 +702,8 @@
   .overlay-show .header-menu .header-main-menu li a {
     font-size: 40px; }
   .header-logo {
-    font-size: 12px;
-    margin-left: 10%; }
+    font-size: 14px;
+    left: 10%; }
   .page-header .hide-menu {
     right: 10%; }
   .header-text h1 {
