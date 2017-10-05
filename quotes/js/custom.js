@@ -35,19 +35,22 @@ $(document).ready(function() {
 	window.onscroll = function() {scrollFunction()};
 
 	function scrollFunction() {
-	    if (document.body.scrollTop > 750 || document.documentElement.scrollTop > 750) {
-	        document.getElementById("up-button").style.display = "block";
-	    } else if(document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+	    if(document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
 	    	document.querySelector("#header-top-wrapper").classList.add('header-top-wrapper-scroll');
 	    	document.querySelector(".header-logo").classList.add('header-logo-scroll');
 	    	document.querySelector(".hide-menu").classList.add('hide-menu-scroll');
+
 	    } else if(document.body.scrollTop < 150 || document.documentElement.scrollTop < 150)  {
 	    	document.querySelector("#header-top-wrapper").classList.remove('header-top-wrapper-scroll');
 	    	document.querySelector(".header-logo").classList.remove('header-logo-scroll');
 	    	document.querySelector(".hide-menu").classList.remove('hide-menu-scroll');
 		}
-	   	else {
-	      	document.getElementById("up-button").style.display = "none";
+		 if (document.body.scrollTop > 750 || document.documentElement.scrollTop > 750) {
+	        document.getElementById("up-button").style.display = "block";
+
+	    } else if (document.body.scrollTop < 750 || document.documentElement.scrollTop < 750) {
+	    	 document.getElementById("up-button").style.display = "none";
+
 	    }
 	}
 	 $('#up-button').on('click', function () {
