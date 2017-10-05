@@ -53,7 +53,7 @@ $(document).ready(function() {
 
 	    }
 	}
-	 $('#up-button').on('click', function () {
+	 $('#up-button, .header-logo').on('click', function () {
             $('html,body').animate({
                 scrollTop: 0
             }, 700);
