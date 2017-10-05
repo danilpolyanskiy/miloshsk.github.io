@@ -598,7 +598,11 @@
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap; } }
-
+@media only screen and (max-width: 812px) {
+  .header-text h1 {
+    font-size: 100px;
+  }
+}
 @media only screen and (max-width: 720px) {
   .excerption-text {
     padding: 100px 0; }
