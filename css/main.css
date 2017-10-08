@@ -231,6 +231,12 @@
 	display: flex;
 	justify-content: space-between;
 }
+.about-item {
+  margin-right: 10px;
+}
+.about-item:last-child {
+  margin-right: 0;
+}
 .about-item p {
   font-size: 20px;
   font-family: "Roboto Slab", serif;
