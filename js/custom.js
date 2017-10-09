@@ -1,11 +1,4 @@
 $(document).ready(function() { 
-
-//Animate
-	wow = new WOW(
-	{
-		mobile: false
-	});
-	wow.init();
 //Mobile menu
 	$('.hide-menu').click(function() {
 		$(this).toggleClass('active-menu'),
@@ -25,7 +18,7 @@ $(document).ready(function() {
 			if ($target.length) {
 				$('ul.mainmenu li').removeClass('active');
 				$(this).parent('li').addClass('active');
-				var targetOffset = $target.offset().top-200;
+				var targetOffset = $target.offset().top-100;
 				$('html,body').animate({scrollTop: targetOffset}, 1000);
 				return false;
 			}
@@ -43,5 +36,5 @@ $(document).ready(function() {
 		var targetOffset = $('section.portfolio').offset().top-105;
 		$('html,body').animate({scrollTop: targetOffset}, 1000);
 	});
-
+	//
 });
