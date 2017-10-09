@@ -5,9 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Portfolio</title>
 	<!-- FOnts -->
-	<link href="https://fonts.googleapis.com/css?family=Nunito&amp;Roboto+Slab" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Nunito|Roboto+Slab" rel="stylesheet">
 	<!-- Css libs-->
-	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/normalize.css">
 	<!-- Css -->
 	<link rel="stylesheet" href="css/main.css">
@@ -20,9 +19,9 @@
 			<a href="#" id="home"><img src="img/cat.svg" width="30" height="30" alt="Logo"></a>
 		</div>
 		<ul class="mainmenu">
-			<li><a href="#portfolio" class="mainmenu-link">Портфолио</a></li>
-			<li><a href="#about" class="mainmenu-link">Инфо</a></li>
-			<li><a href="#contact" class="mainmenu-link">Контакты</a></li>
+			<li><a href="#portfolio-scroll" class="mainmenu-link">Портфолио</a></li>
+			<li><a href="#about-scroll" class="mainmenu-link">Инфо</a></li>
+			<li><a href="#contact-scroll" class="mainmenu-link">Контакты</a></li>
 		</ul>
 		<div class="hide-menu">
 			<span class="hide-line hide-line-top"></span>
@@ -40,11 +39,11 @@
 		</div>
 	</header>
 <!-- Portfolio -->
-	<section class="portfolio">
+	<section class="portfolio" id="portfolio-scroll">
 
 		<div class="container">
 			<h2 >Мои работы</h2>
-			<div class="portfolio-item-wrapper" id="portfolio">
+			<div class="portfolio-item-wrapper">
 				<div class="portfolio-item">
 					<a href="/bikes" class="portfolio-link">
 						<div class="portfolio-link-overlay">
@@ -76,18 +75,18 @@
 
 <!-- About -->
 
-	<section class="about">	
+	<section class="about" >	
 		<div class="container">
-			<h2 class="about-caption" id="about">Инфо</h2>
+			<h2 class="about-caption" id="about-scroll">Инфо</h2>
 			<div class="about-items-wrapper">
-				<div class="about-item wow  slideInLeft">
+				<div class="about-item  slideInLeft">
 					<p>
 					Кроссбраузерность - сайт выглядит одинаково во всех последних версиях браузеров.</p>
 				</div>
-				<div class="about-item wow slideInUp">
+				<div class="about-item  slideInUp">
 					<p>Валидная верстка в соответствии с макетом.</p>
 				</div>
-				<div class="about-item  wow slideInRight">
+				<div class="about-item  slideInRight">
 					<p>Адаптивность - сайт корректно отображается на различных устройствах и  разрешениях.</p>
 				</div>
 			</div>
@@ -96,10 +95,10 @@
 
 <!-- Contacts -->
 
-	<section class="contact">
+	<section class="contact" id="contact-scroll">
 		<div class="container">
-			<h2 id="contact">Связаться со мной</h2>
-				<div class="contact-form-wrapper">
+			<h2>Связаться со мной</h2>
+				<div class="contact-form-wrapper" >
 						<form action="url" name="sendMessage" id="contactForm">
 						<input type="text" class="contact-input" name="name" placeholder="Введите имя">
 						<input type="email" class="contact-input" name="email" placeholder="Введите e-mail">
@@ -107,6 +106,7 @@
 						<button type="submit" class="submit-button">Отправить</button>
 					</form>
 				</div>
+			</div>
 
 		</div>
 	</section>
@@ -131,7 +131,5 @@
 <!-- Scripts -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 <script src="js/custom.js"></script>
-<script src="js/wow.js"></script>
-
 </body>
 </html>
