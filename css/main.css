@@ -89,6 +89,7 @@
   height: 100vh;
   background: url(../img/header-bg.jpg);
   background-attachment: fixed;
+  background-size: cover;
   text-align: center;
   position: relative;
   margin: 0;
@@ -241,7 +242,7 @@
   font-size: 20px;
   font-family: "Roboto Slab", serif;
   color: #000000;
-  margin-bottom: 50px; }
+  margin-bottom: 30px; }
 .about .slideInLeft {
   animation: slideInLeft 1s  ease-in-out;
 }
@@ -386,8 +387,6 @@ animation: slideInUp 1s  ease-in-out;
     display: none; }
   .header-caption:after {
     display: none; }
-  .header-text {
-    top: 50%; }
   .portfolio h2:after {
     display: none; }
   .menubar {
@@ -398,6 +397,11 @@ animation: slideInUp 1s  ease-in-out;
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;}
+ 	.menubar ul li{
+ 		padding: 15px;
+ 		margin: 0;
+ 		text-align: center;
+ 	} 
 	.mainmenu {
 	 	transform: translateY(-250px);
 	 	transition: all 0.6s ease;
@@ -409,7 +413,6 @@ animation: slideInUp 1s  ease-in-out;
  	 	transform: translateY(40px);
    }
   .menubar .mainmenu li {
-    margin: 0;
    	width: 100%;
    	cursor: pointer;
    }
@@ -417,10 +420,9 @@ animation: slideInUp 1s  ease-in-out;
   	background-color: #DDDDDD;
   }
   .menubar .mainmenu li a {
+    padding-top: 20px;
     color: #222222; 
-    display: block;
 	  width: 100%;
-    padding: 20px 0;
 	  text-align: center;}
    .menubar .mainmenu li a:hover {
     color: #777777; }
@@ -429,6 +431,12 @@ animation: slideInUp 1s  ease-in-out;
       z-index: 100;}
   .about {
     text-align: center; } }
+@media only screen and (max-width: 738px) {
+  .header-text {
+    top: 40%; }
+  .about-item p {
+    margin-bottom: 20px; }
+}
 
 .container {
   max-width: 1200px;
