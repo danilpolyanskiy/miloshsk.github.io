@@ -134,7 +134,7 @@
   position: absolute;
   left: 50%;
   margin-left: -30px;
-  bottom: 25px;
+  bottom: 5%;
   border: 3px solid #fff;
   -webkit-border-radius: 50%;
           border-radius: 50%;
@@ -430,8 +430,7 @@ animation: slideInUp 1s  ease-in-out;
       display: block; 
       z-index: 100;}
   .about {
-    text-align: center; } }
-@media only screen and (max-width: 738px) {
+    text-align: center; } 
   .header-text {
     top: 40%; }
   .about-item p {
@@ -439,7 +438,11 @@ animation: slideInUp 1s  ease-in-out;
   .portfolio-link-overlay {
     display: none; }
 }
-
+@media only screen and (max-width: 460px) {
+  .header-button-area {
+    bottom: 10%;
+  }
+}
 .container {
   max-width: 1200px;
   width: 97%;
