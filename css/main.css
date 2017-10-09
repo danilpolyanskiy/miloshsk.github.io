@@ -439,8 +439,11 @@ animation: slideInUp 1s  ease-in-out;
     display: none; }
 }
 @media only screen and (max-width: 460px) {
+  .header-text {
+    top: 30%;
+  }
   .header-button-area {
-    bottom: 10%;
+    bottom: 12%;
   }
 }
 .container {
