@@ -222,8 +222,8 @@
 .about {
   background-color: #f5f5f5;
   color: #000000;
-  margin-bottom: 10px;
-  padding-top: 15px; }
+  margin-bottom: 50px;
+  padding: 35px 0; }
 .about-items-wrapper {
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -436,6 +436,8 @@ animation: slideInUp 1s  ease-in-out;
     top: 40%; }
   .about-item p {
     margin-bottom: 20px; }
+  .portfolio-link-overlay {
+    display: none; }
 }
 
 .container {
