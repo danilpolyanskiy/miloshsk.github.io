@@ -36,5 +36,14 @@ $(document).ready(function() {
 		var targetOffset = $('section.portfolio').offset().top-105;
 		$('html,body').animate({scrollTop: targetOffset}, 1000);
 	});
-	//
+	//Scroll animation
+	window.onscroll = function() {scrollFunction()};
+
+	function scrollFunction() {
+	    if(document.body.scrollTop > 550 || document.documentElement.scrollTop > 550) {
+	    	document.querySelector('.ai-l').classList.add('slideInLeft');
+	    	document.querySelector(".ai-m").classList.add('slideInUp');
+	    	document.querySelector(".ai-r").classList.add('slideInRight');
+	    }
+	}
 });
