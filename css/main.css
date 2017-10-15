@@ -1,544 +1,137 @@
-.container {
-  max-width: 1200px;
-  width: 97%;
-  margin: 0 auto; }
-h2 {
-  text-align: center;
-  font-size: 40px;
-  font-family: "Nunito", sans-serif;
-  font-weight: bold;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  letter-spacing: 2px;
-  color: #222222; }
-.page-header {
-  height: 100vh;
-  background: url(../img/header-bg.jpg);
-  background-attachment: fixed;
-  background-size: cover;
-  text-align: center;
-  position: relative;
-  margin: 0;
-  margin-bottom: 45px;
-  overflow: hidden; 
-}
-.header-text {
-  position: absolute;
-  width: 100%;
-  top: 50%;
-  left: 0;
-  text-align: center;
-  color: #ffffff;
-}
-.header-caption {
-  font-size: 60px;
-  text-transform: uppercase;
-  letter-spacing: 6px;
-  margin: 15px;
-  font-family: "Nunito", sans-serif;
-  font-weight: bold; 
-}
-.header-caption:before {
-  content: "";
-  display: block;
-  width: 850px;
-  height: 4px;
-  background-color: #fff;
-  margin: auto;
-  margin-bottom: 15px;
-}
-.header-caption:after {
-  content: "";
-  display: block;
-  width: 850px;
-  height: 4px;
-  background-color: #fff;
-  margin: auto;
-  margin-top: 15px; 
-}
-.header-button-area {
-  position: absolute;
-  left: 50%;
-  margin-left: -30px;
-  bottom: 5%;
-  border: 3px solid #fff;
-  border-radius: 50%;
-  height: 60px;
-  width: 60px;
-  text-align: center; 
-  cursor: pointer;
-}
-.header-button-area:hover {
-  background-color: #fff;
-  -webkit-transition: all 0.5s ease-out;
-  -o-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out; }
-.header-button-area:hover span {
-  -webkit-transition: all 0.5s ease-out;
-  -o-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
-  border: 2px solid #000;
-  border-width: 0 4px 4px 0; }
-.header-button-area span {
-  border: 2px solid #fff;
-  border-width: 0 4px 4px 0;
-  display: inline-block;
-  margin-top: 14px;
-  padding: 7px;
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg); }
-.menubar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  justify-content: space-around;
-  position: fixed;
-  top: 0px;
-  height: 70px;
-  width: 100%;
-  z-index: 100;
-  background-color: #FFF;
-  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2); }
-.mainmenu{
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  list-style-type: none;
-  width: 60%;}
-.menubar li {
-  z-index: 100;
-  margin-left: 10%; }
-.menubar li a {
-  color: #777777;
-  font-size: 16px;
-  font-family: "Roboto Slab", serif;
-  text-decoration: none;
-  text-transform: uppercase;
-  position: relative;
-  padding-bottom: 10px;
-  -webkit-transition: color 400ms ease;
-  -o-transition: color 400ms ease;
-  transition: color 400ms ease; }
-.menubar li a:hover {
-  color: #222222; }
-.menubar li a:active {
-  color: #222222; }
-.hide-menu {
-  display: none;
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
-  right: 20px;
-  top: 15px; }
-.hide-menu .hide-line {
-  position: absolute;
-  display: block;
-  width: 85%;
-  left: 10%;
-  height: 3px;
-  background-color: #000;
-  border-radius: 10px; }
-.hide-menu .hide-line-top {
-  top: 10px;
-  -webkit-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease; }
-.hide-menu .hide-line-middle {
-  top: 20px;
-  -webkit-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease; }
-.hide-menu .hide-line-bottom {
-  top: 30px;
-  -webkit-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease; }
-.hide-menu.active-menu .hide-line-top {
-  top: 20px;
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg); }
-.hide-menu.active-menu .hide-line-middle {
-  opacity: 0; }
-.hide-menu.active-menu .hide-line-bottom {
-  top: 20px;
-  -webkit-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-          transform: rotate(-45deg); }
-.portfolio {
-  margin-bottom: 50px; }
-.portfolio h2:after {
-  content: "";
-  display: block;
-  width: 25%;
-  height: 4px;
-  background-color: #000;
-  margin: auto;
-  margin-top: 15px; }
-.portfolio p {
-  font-size: 20px;
-  text-align: center;
-  margin: 40px 0;
-  font-family: "Roboto Slab", serif;
-  color: #000000; }
-.portfolio-item-wrapper{
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  -webkit-box-pack:center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around; }
-.portfolio-item {
-  width: 30%;
-  margin-bottom: 20px;
-  -webkit-transition: all 0.6s ease;
-  -o-transition: all 0.6s ease;
-  transition: all 0.6s ease; }
-.portfolio-link {
-  display: block;
-  position: relative; }
-.portfolio-link .img-responsive {
-  width: 100%;
-  height: auto; }
-.portfolio-link:hover .portfolio-link-overlay{
-  -webkit-transition: all 0.8s ease;
-  -o-transition: all 0.8s ease;
-  transition: all 0.8s ease;
-  opacity: 1;
-  visibility: visible;
-  }
-.portfolio-link .portfolio-link-overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  background-color: rgba(34, 34, 34, 0.8);
-  visibility: hidden;
-  opacity: 0; }
-  @-webkit-keyframes titleShow{
-    from{ opacity: 0;  -webkit-transform: scale3d(.3, .3, .3);  transform: scale3d(.3, .3, .3);}
-    100% {opacity: 1};
-  }
-  @keyframes titleShow{
-    from{ opacity: 0;  -webkit-transform: scale3d(.3, .3, .3);  transform: scale3d(.3, .3, .3);}
-    100% {opacity: 1};
-  }
-.portfolio-link-overlay:hover h6{
-   -webkit-animation: titleShow 1s  ease-in-out;
-           animation: titleShow 1s  ease-in-out; }
-.portfolio-link-overlay h6{
-  font-size: 20px;
-  letter-spacing: 1;
-  text-transform: uppercase;
-  font-family: "Roboto Slab", serif;
-  text-align: center;
-  margin-top: 20%;
-  color: #fff; }
-.about {
-  background-color: #f5f5f5;
-  color: #000000;
-  margin-bottom: 50px;
-  padding: 35px 0; }
-.about-items-wrapper {
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-.about-item {
-  margin-right: 10px;
-}
-.about-item:last-child {
-  margin-right: 0;
-}
-.about-item p {
-  font-size: 20px;
-  font-family: "Roboto Slab", serif;
-  color: #000000;
-  margin-bottom: 30px; }
-.about .slideInLeft {
-  -webkit-animation: slideInLeft 1s  ease-in-out;
-          animation: slideInLeft 1s  ease-in-out;
-}
-.about .slideInRight {
--webkit-animation: slideInRight 1s  ease-in-out;
-        animation: slideInRight 1s  ease-in-out;
-}
-.about .slideInUp {
--webkit-animation: slideInUp 1s  ease-in-out;
-        animation: slideInUp 1s  ease-in-out;
-  }
-@-webkit-keyframes slideInUp {
-   0% { opacity: 0;
-      -webkit-transform: translateY(150px);
-       transform: translateY(150px); }
-    100% {
-       -webkit-transform: translateY(0);
-       transform: translateY(0);
-  }
-}
-@keyframes slideInUp {
-   0% { opacity: 0;
-      -webkit-transform: translateY(150px);
-       transform: translateY(150px); }
-    100% {
-       -webkit-transform: translateY(0);
-       transform: translateY(0);
-  }
-}
-@-webkit-keyframes slideInRight {
-   0% { opacity: 0;
-      -webkit-transform: translateX(100px);
-       transform: translateX(100px); }
-    100% {
-       -webkit-transform: translateX(0);
-       transform: translateX(0);
-  }
-}
-@keyframes slideInRight {
-   0% { opacity: 0;
-      -webkit-transform: translateX(100px);
-       transform: translateX(100px); }
-    100% {
-       -webkit-transform: translateX(0);
-       transform: translateX(0);
-  }
-}
-@-webkit-keyframes slideInLeft {
-   0% { opacity: 0;
-      -webkit-transform: translateX(-100px);
-       transform: translateX(-100px); }
-    100% {
-      -webkit-transform: translateX(0);
-       transform: translateX(0);
-  }
-}
-@keyframes slideInLeft {
-   0% { opacity: 0;
-      -webkit-transform: translateX(-100px);
-       transform: translateX(-100px); }
-    100% {
-      -webkit-transform: translateX(0);
-       transform: translateX(0);
-  }
-}
-.contact {
-  background-image: url(../img/contact-bg.jpg);
-  background-position: 65% 0;
-  padding-top: 60px;
-  padding-bottom: 80px;
-  overflow: hidden; }
-.contact-container {
-  max-width: 455px;
-  width: 97%;
-  margin: 0 auto; }
-.contact-container p {
-  text-align: center;
-  font-family: "Roboto", sans-serif;
-  font-size: 15px;
-  margin-bottom: 50px; }
-.contact-form {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  flex-direction: column;
-}
-.contact-form-row {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  justify-content: space-between;
-}
-.contact-form-row .contact-form-item {
-  width: 40%;
-}
-.contact-button{
-  background-color: #b7b7b7;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-.contact-button:hover {
-  background-color: #000;
-  color: #fff;
-}
-.contact-form-item {
-  font-family: "Roboto", sans-serif;
-  padding: 15px;
-  margin-bottom: 20px;
-  color: #808080;
-  height: auto;
-  border: 1px solid #999;
-  text-transform: uppercase;
-  resize: none;
-  outline: none;
-  font-style: italic;
-  font-size: 12px;
-  -webkit-border-radius: 15px;
-          border-radius: 15px;}
-.contact-form-item:focus {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  border: 1px solid #999;}
-.page-footer {
-  background-color: #222222;
-  padding: 50px 0; }
-.page-footer p {
-  color: #fff;
-  text-align: center;
-  font-family: "Roboto Slab", serif; 
-  font-size: 16px }
-.footer-top {
-  margin-bottom: 15px; }
-.footer-top ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  list-style-type: none;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 0; }
-.footer-top li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  width: 50px;
-  margin: 0 10px; }
-.footer-top a {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%; }
-.footer-top .skype-icon {
-  background-image: url(../img/social.png);
-  background-repeat: no-repeat;
-  background-position: -7px -6px; }
-.footer-top .vk-icon {
-  background-image: url(../img/social.png);
-  background-repeat: no-repeat;
-  background-position: -143px -6px; }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Portfolio</title>
+	<!-- Css-->
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+	<!-- FOnts -->
+	<link href="https://fonts.googleapis.com/css?family=Nunito|Roboto+Slab" rel="stylesheet">
+	<!-- Scripts -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+	<script src="js/custom.js"></script>
+	
+</head>
+<body>
+<!-- Page header -->
+	<header class="page-header">
+	<nav class="menubar">
+		<a href="#" id="home"><img src="img/cat.svg" width="30" height="30" alt="Logo"></a>
+		<ul class="mainmenu">
+			<li><a href="#portfolio-scroll" class="mainmenu-link">Портфолио</a></li>
+			<li><a href="#about-scroll" class="mainmenu-link">Инфо</a></li>
+			<li><a href="#contact-scroll" class="mainmenu-link">Контакты</a></li>
+		</ul>
+		<div class="hide-menu">
+			<span class="hide-line hide-line-top"></span>
+			<span class="hide-line hide-line-middle"></span>
+			<span class="hide-line hide-line-bottom"></span>
+		</div>
+	</nav>
+	<div class="container">
+		<div class="header-text">	
+			<h1 class="header-caption">Web graphic designer</h1>
+		</div>
+		<div class="header-button-area">
+			<span></span>
+		</div>
+	</div>
+	</header>
+<!-- Portfolio -->
+	<section class="portfolio" id="portfolio-scroll">
 
-@media only screen and (max-width: 1120px) {
-  .about-items-wrapper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    text-align: center;
-  }
-}
-@media only screen and (max-width: 975px){a
-  .portfolio-item {
-    width: 95%;
-  }
-  .portfolio-link-overlay h6{
-    font-size: 34px;
-  }
-}
-@media only screen and (max-width: 738px) {
-  .header-caption {
-    font-size: 40px; }
-  .header-caption:before {
-    display: none; }
-  .header-caption:after {
-    display: none; }
-  .portfolio h2:after {
-    display: none; }
-  .menubar {
-    padding: 0;
-    display: block;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;}
-  .menubar ul li{
-    padding: 15px;
-    margin: 0;
-    text-align: center; } 
-  #home {
-  position: absolute;
-  top: 15px;
-  left: 20px; 
-  z-index: 100;}    
-  .mainmenu {
-    -webkit-transform: translateY(-250px);
-        -ms-transform: translateY(-250px);
-            transform: translateY(-250px);
-    -webkit-transition: all 0.6s ease;
-    -o-transition: all 0.6s ease;
-    transition: all 0.6s ease;
-    display: block;
-    background-color: #fff;
-    width: 100%; 
-    padding: 0;}
-  .menubar .mainmenu-hide {
-    -webkit-transform: translateY(40px);
-        -ms-transform: translateY(40px);
-            transform: translateY(40px);
-   }
-  .menubar .mainmenu li {
-    width: 100%;
-    cursor: pointer;
-   }
-  .menubar .mainmenu li:hover {
-    background-color: #DDDDDD;
-  }
-  .menubar .mainmenu li a {
-    padding-top: 20px;
-    color: #222222; 
-    width: 100%;
-    text-align: center;}
-   .menubar .mainmenu li a:hover {
-    color: #777777; }
-    .menubar .hide-menu {
-      display: block; 
-      z-index: 100;}
-  .about {
-    text-align: center; } 
-  .header-text {
-    top: 40%; }
-  .about-item p {
-    margin-bottom: 20px; }
-  .portfolio-link-overlay {
-    display: none; }
-}
-@media only screen and (max-width: 460px) {
-  .header-text {
-    top: 25%;
-  }
-  .header-button-area {
-    bottom: 15%;
-  }
-}
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
+		<div class="container">
+			<h2 >Мои работы</h2>
+			<div class="portfolio-item-wrapper">
+				<div class="portfolio-item">
+					<a href="/bikes" class="portfolio-link">
+						<div class="portfolio-link-overlay">
+							<h6>Click to see details</h6>
+						</div>
+						<img src="img/bikes.jpg" alt="pic" class="img-responsive">
+					</a>
+				</div>
+				<div class="portfolio-item">
+					<a href="/quotes" class="portfolio-link">
+						<div class="portfolio-link-overlay">
+							<h6>Click to see details</h6>
+						</div>
+						<img src="img/quotes.jpg" alt="pic" class="img-responsive">
+					</a>
+				</div>
+				<div class="portfolio-item">
+					<a href="/landX" class="portfolio-link">
+						<div class="portfolio-link-overlay">
+							<h6>Click to see details</h6>
+						</div>
+						<img src="img/landX.jpg" alt="pic" class="img-responsive">
+					</a>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+<!-- About -->
+
+	<section class="about" >	
+		<div class="container">
+			<h2 class="about-caption" id="about-scroll">Инфо</h2>
+			<div class="about-items-wrapper">
+				<div class="about-item ai-l">
+					<p>
+					Кроссбраузерность - сайт выглядит одинаково во всех последних версиях браузеров.</p>
+				</div>
+				<div class="about-item  ai-m">
+					<p>Валидная верстка в соответствии с макетом.</p>
+				</div>
+				<div class="about-item  ai-r">
+					<p>Адаптивность - сайт корректно отображается на различных устройствах и  разрешениях.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+<!-- Contacts -->
+
+	<section class="contact">
+		<div class="contact-container">
+				<h2 id="contact-scroll">Contact us</h2>
+				<p>Please contact us for all inquiries and purchase options.</p>
+				<form action="url" name="send-message" class="contact-form">
+					<div class="contact-form-row">
+						<input type="text" name="name" class="contact-form-item" placeholder="name">
+						<input type="text" name="surname" class="contact-form-item" placeholder="surname">
+					</div>
+					<input type="email" name="email" class="contact-form-item" placeholder="User@domain.com">
+					<textarea name="message" id="message" rows="5" class="contact-form-item" placeholder="Message"></textarea>
+					<button type="submit" class="contact-form-item contact-button">Send</button>
+				</form>
+			</div>
+
+		</div>
+
+	</section>
+
+<!-- Footer -->
+
+	<footer class="page-footer">
+		<div class="container">	
+			<div class="footer-top">
+				<p>Быстрая связь</p>
+				<ul>
+					<li><a class="skype-icon" href="javascript:void(0);"></a></li>
+					<li><a class="vk-icon" href="javascript:void(0);"></a></li>
+				</ul>
+			</div>
+			<div class="footer-bottom">
+				<p>Copyright © 2017 | Викторов Александр</p>
+			</div>
+		</div>
+	</footer>
+		
+
+</body>
+</html>
