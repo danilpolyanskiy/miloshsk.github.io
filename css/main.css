@@ -344,68 +344,66 @@ h2 {
   }
 }
 .contact {
+  background-image: url(../img/contact-bg.jpg);
+  background-position: 65% 0;
+  padding-top: 60px;
+  padding-bottom: 80px;
+  overflow: hidden; }
+.contact-container {
+  max-width: 455px;
+  width: 97%;
+  margin: 0 auto; }
+.contact-container p {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
   margin-bottom: 50px; }
-.contact-form-wrapper {
-  width: 95%;
-  margin: 0 auto;
-  background-color: white;
-  text-align: center; }
 .contact-form {
+  display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-.contact-input {
-  border: 0;
-  padding: 15px;
-  border: 1px solid #DDDDDD;
-  border-radius: 10px;
-  margin-bottom: 15px;
-  color: #222222;
-  outline: none; 
-  -webkit-transition: all 0.5s ease; 
-  -o-transition: all 0.5s ease; 
-  transition: all 0.5s ease}
- .contact-input:focus {
-  border-color: #777777; }
-.message{
-  width: 100%;
-  border: 0;
-  padding: 15px;
-  border: 1px solid #DDDDDD;
-  border-radius: 10px;
-  margin-bottom: 10px;
-  color: #222222;
-  outline: none;
-  resize: none;
-  -webkit-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease }
-.message:focus { 
-  border-color: #777777; }
-.submit-button {
-  border: 0;
-  padding: 15px;
-  background-color: #DDDDDD;
-  border-radius: 10px;
-  color: #222222;
+.contact-form-row {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+}
+.contact-form-row .contact-form-item {
+  width: 40%;
+}
+.contact-button{
+  background-color: #b7b7b7;
   cursor: pointer;
-  -webkit-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  outline: none; }
-.submit-button:hover {
+  transition: all 0.3s ease;
+}
+.contact-button:hover {
   background-color: #000;
-  color: #fff; }
+  color: #fff;
+}
+.contact-form-item {
+  font-family: "Roboto", sans-serif;
+  padding: 15px;
+  margin-bottom: 20px;
+  color: #808080;
+  height: auto;
+  border: 1px solid #999;
+  text-transform: uppercase;
+  resize: none;
+  outline: none;
+  font-style: italic;
+  font-size: 12px;
+  -webkit-border-radius: 15px;
+          border-radius: 15px;}
+.contact-form-item:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid #999;}
 .page-footer {
   background-color: #222222;
   padding: 50px 0; }
