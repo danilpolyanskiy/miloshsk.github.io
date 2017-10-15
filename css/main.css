@@ -267,8 +267,7 @@ h2 {
           justify-content: space-between;
 }
 .about-item {
-  width: 32%;
-  text-align: center;
+  margin-right: 10px;
 }
 .about-item:last-child {
   margin-right: 0;
@@ -351,21 +350,7 @@ h2 {
   margin: 0 auto;
   background-color: white;
   text-align: center; }
-.contact-input {
-  width: 100%;
-  border: 0;
-  padding: 15px;
-  border: 1px solid #DDDDDD;
-  border-radius: 10px;
-  margin-bottom: 15px;
-  color: #222222;
-  outline: none; 
-  -webkit-transition: all 0.5s ease; 
-  -o-transition: all 0.5s ease; 
-  transition: all 0.5s ease}
- .contact-input:focus {
-  border-color: #777777; }
-#contactForm {
+.contact-form {
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
@@ -379,7 +364,20 @@ h2 {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-#message {
+.contact-input {
+  border: 0;
+  padding: 15px;
+  border: 1px solid #DDDDDD;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  color: #222222;
+  outline: none; 
+  -webkit-transition: all 0.5s ease; 
+  -o-transition: all 0.5s ease; 
+  transition: all 0.5s ease}
+ .contact-input:focus {
+  border-color: #777777; }
+.message{
   width: 100%;
   border: 0;
   padding: 15px;
@@ -392,10 +390,9 @@ h2 {
   -webkit-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease }
- #message:focus { 
+.message:focus { 
   border-color: #777777; }
 .submit-button {
-  width: 100%;
   border: 0;
   padding: 15px;
   background-color: #DDDDDD;
