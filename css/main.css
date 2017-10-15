@@ -11,6 +11,184 @@ h2 {
   margin-bottom: 40px;
   letter-spacing: 2px;
   color: #222222; }
+.container {
+  max-width: 1200px;
+  width: 97%;
+  margin: 0 auto; }
+h2 {
+  text-align: center;
+  font-size: 40px;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  letter-spacing: 2px;
+  color: #222222; }
+.page-header {
+  height: 100vh;
+  background: url(../img/header-bg.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center;
+  position: relative;
+  margin: 0;
+  margin-bottom: 45px;
+  overflow: hidden; 
+}
+.header-text {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  text-align: center;
+  color: #ffffff;
+}
+.header-caption {
+  font-size: 60px;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  margin: 15px;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold; 
+}
+.header-caption:before {
+  content: "";
+  display: block;
+  width: 850px;
+  height: 4px;
+  background-color: #fff;
+  margin: auto;
+  margin-bottom: 15px;
+}
+.header-caption:after {
+  content: "";
+  display: block;
+  width: 850px;
+  height: 4px;
+  background-color: #fff;
+  margin: auto;
+  margin-top: 15px; 
+}
+.header-button-area {
+  position: absolute;
+  left: 50%;
+  margin-left: -30px;
+  bottom: 5%;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  text-align: center; 
+  cursor: pointer;
+}
+.header-button-area:hover {
+  background-color: #fff;
+  -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out; }
+.header-button-area:hover span {
+  -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  border: 2px solid #000;
+  border-width: 0 4px 4px 0; }
+.header-button-area span {
+  border: 2px solid #fff;
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  margin-top: 14px;
+  padding: 7px;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg); }
+.menubar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  top: 0px;
+  height: 70px;
+  width: 100%;
+  z-index: 100;
+  background-color: #FFF;
+  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2); }
+.mainmenu{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  list-style-type: none;
+  width: 60%;}
+.menubar li {
+  z-index: 100;
+  margin-left: 10%; }
+.menubar li a {
+  color: #777777;
+  font-size: 16px;
+  font-family: "Roboto Slab", serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 10px;
+  -webkit-transition: color 400ms ease;
+  -o-transition: color 400ms ease;
+  transition: color 400ms ease; }
+.menubar li a:hover {
+  color: #222222; }
+.menubar li a:active {
+  color: #222222; }
+.hide-menu {
+  display: none;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  right: 20px;
+  top: 15px; }
+.hide-menu .hide-line {
+  position: absolute;
+  display: block;
+  width: 85%;
+  left: 10%;
+  height: 3px;
+  background-color: #000;
+  border-radius: 10px; }
+.hide-menu .hide-line-top {
+  top: 10px;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+.hide-menu .hide-line-middle {
+  top: 20px;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+.hide-menu .hide-line-bottom {
+  top: 30px;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+.hide-menu.active-menu .hide-line-top {
+  top: 20px;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg); }
+.hide-menu.active-menu .hide-line-middle {
+  opacity: 0; }
+.hide-menu.active-menu .hide-line-bottom {
+  top: 20px;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg); }
 .contact {
   background-image: url(../img/contact-bg.jpg);
   background-position: 65% 0;
