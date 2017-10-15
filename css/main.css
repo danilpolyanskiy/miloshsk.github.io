@@ -246,7 +246,7 @@ h2 {
           justify-content: space-between;
 }
 .about-item {
-  margin-right: 10px;
+  margin-right: 20px;
 }
 .about-item:last-child {
   margin-right: 0;
@@ -315,7 +315,7 @@ h2 {
   border: 1px solid #999;}
 .page-footer {
   background-color: #222222;
-  padding: 50px 0; }
+  padding: 25px 0; }
 .page-footer p {
   color: #fff;
   text-align: center;
@@ -352,7 +352,10 @@ h2 {
   background-image: url(../img/social.png);
   background-repeat: no-repeat;
   background-position: -143px -6px; }
-@media only screen and (max-width: 1120px) {
+@media only screen and (max-width: 975px){
+  .portfolio-item {
+    width: 95%;
+  }
   .about-items-wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -360,11 +363,6 @@ h2 {
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
-  }
-}
-@media only screen and (max-width: 975px){
-  .portfolio-item {
-    width: 95%;
   }
 }
 @media only screen and (max-width: 738px) {
