@@ -2,6 +2,15 @@
   max-width: 1200px;
   width: 97%;
   margin: 0 auto; }
+h2 {
+  text-align: center;
+  font-size: 40px;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  letter-spacing: 2px;
+  color: #222222; }
 .page-header {
   height: 100vh;
   background: url(../img/header-bg.jpg);
@@ -537,12 +546,3 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-h2 {
-  text-align: center;
-  font-size: 40px;
-  font-family: "Nunito", sans-serif;
-  font-weight: bold;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  letter-spacing: 2px;
-  color: #222222; }
