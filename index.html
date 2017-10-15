@@ -2,15 +2,16 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Portfolio</title>
+	<!-- Css-->
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
 	<!-- FOnts -->
 	<link href="https://fonts.googleapis.com/css?family=Nunito|Roboto+Slab" rel="stylesheet">
-	<!-- Css libs-->
-	<link rel="stylesheet" href="css/normalize.css">
-	<!-- Css -->
-	<link rel="stylesheet" href="css/main.css">
 	<!-- Scripts -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+	<script src="js/custom.js"></script>
 	
 </head>
 <body>
@@ -98,10 +99,10 @@
 	<section class="contact" id="contact-scroll">
 		<div class="container">
 			<h2>Связаться со мной</h2>
-					<form action="url" name="sendMessage" id="contactForm">
+					<form action="url" name="sendMessage" id="contactForm" class="contact-form">
 						<input type="text" class="contact-input" name="name" placeholder="Введите имя">
 						<input type="email" class="contact-input" name="email" placeholder="Введите e-mail">
-						<textarea name="message" id="message" rows="5" placeholder="Введите сообщение"></textarea>
+						<textarea name="message" id="message" class="message" rows="5" placeholder="Введите сообщение"></textarea>
 						<button type="submit" class="submit-button">Отправить</button>
 					</form>
 			</div>
@@ -126,7 +127,6 @@
 		</div>
 	</footer>
 		
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-<script src="js/custom.js"></script>
+
 </body>
 </html>
