@@ -283,6 +283,72 @@ h2 {
   font-family: "Roboto Slab", serif;
   color: #000000;
   margin-bottom: 30px; }
+about .slideInLeft {
+  -webkit-animation: slideInLeft 1s  ease-in-out;
+          animation: slideInLeft 1s  ease-in-out;
+}
+.about .slideInRight {
+-webkit-animation: slideInRight 1s  ease-in-out;
+        animation: slideInRight 1s  ease-in-out;
+}
+.about .slideInUp {
+-webkit-animation: slideInUp 1s  ease-in-out;
+        animation: slideInUp 1s  ease-in-out;
+  }
+@-webkit-keyframes slideInUp {
+   0% { opacity: 0;
+      -webkit-transform: translateY(150px);
+       transform: translateY(150px); }
+    100% {
+       -webkit-transform: translateY(0);
+       transform: translateY(0);
+  }
+}
+@keyframes slideInUp {
+   0% { opacity: 0;
+      -webkit-transform: translateY(150px);
+       transform: translateY(150px); }
+    100% {
+       -webkit-transform: translateY(0);
+       transform: translateY(0);
+  }
+}
+@-webkit-keyframes slideInRight {
+   0% { opacity: 0;
+      -webkit-transform: translateX(100px);
+       transform: translateX(100px); }
+    100% {
+       -webkit-transform: translateX(0);
+       transform: translateX(0);
+  }
+}
+@keyframes slideInRight {
+   0% { opacity: 0;
+      -webkit-transform: translateX(100px);
+       transform: translateX(100px); }
+    100% {
+       -webkit-transform: translateX(0);
+       transform: translateX(0);
+  }
+}
+@-webkit-keyframes slideInLeft {
+   0% { opacity: 0;
+      -webkit-transform: translateX(-100px);
+       transform: translateX(-100px); }
+    100% {
+      -webkit-transform: translateX(0);
+       transform: translateX(0);
+  }
+}
+@keyframes slideInLeft {
+   0% { opacity: 0;
+      -webkit-transform: translateX(-100px);
+       transform: translateX(-100px); }
+    100% {
+      -webkit-transform: translateX(0);
+       transform: translateX(0);
+  }
+}
 .contact {
   background-image: url(../img/contact-bg.jpg);
   background-position: 65% 0;
