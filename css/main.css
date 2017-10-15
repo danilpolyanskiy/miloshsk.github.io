@@ -362,7 +362,7 @@ h2 {
     text-align: center;
   }
 }
-@media only screen and (max-width: 975px){a
+@media only screen and (max-width: 975px){
   .portfolio-item {
     width: 95%;
   }
