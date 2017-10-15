@@ -262,11 +262,7 @@ h2 {
   padding-top: 60px;
   padding-bottom: 80px;
   overflow: hidden; }
-.contact-container {
-  max-width: 455px;
-  width: 97%;
-  margin: 0 auto; }
-.contact-container p {
+.contact p {
   text-align: center;
   font-family: "Roboto", sans-serif;
   font-size: 15px;
