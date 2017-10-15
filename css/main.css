@@ -2,6 +2,83 @@
   max-width: 1200px;
   width: 97%;
   margin: 0 auto; }
+.page-header {
+  height: 100vh;
+  background: url(../img/header-bg.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center;
+  position: relative;
+  margin: 0;
+  margin-bottom: 45px;
+  overflow: hidden; 
+}
+.header-text {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  text-align: center;
+  color: #ffffff;
+}
+.header-caption {
+  font-size: 60px;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  margin: 15px;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold; 
+}
+.header-caption:before {
+  content: "";
+  display: block;
+  width: 850px;
+  height: 4px;
+  background-color: #fff;
+  margin: auto;
+  margin-bottom: 15px;
+}
+.header-caption:after {
+  content: "";
+  display: block;
+  width: 850px;
+  height: 4px;
+  background-color: #fff;
+  margin: auto;
+  margin-top: 15px; 
+}
+.header-button-area {
+  position: absolute;
+  left: 50%;
+  margin-left: -30px;
+  bottom: 5%;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  text-align: center; 
+  cursor: pointer;
+}
+.header-button-area:hover {
+  background-color: #fff;
+  -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out; }
+.header-button-area:hover span {
+  -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  border: 2px solid #000;
+  border-width: 0 4px 4px 0; }
+.header-button-area span {
+  border: 2px solid #fff;
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  margin-top: 14px;
+  padding: 7px;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg); }
 .menubar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -88,85 +165,6 @@
   -webkit-transform: rotate(-45deg);
       -ms-transform: rotate(-45deg);
           transform: rotate(-45deg); }
-
-.page-header {
-  height: 100vh;
-  background: url(../img/header-bg.jpg);
-  background-attachment: fixed;
-  background-size: cover;
-  text-align: center;
-  position: relative;
-  margin: 0;
-  margin-bottom: 45px;
-  overflow: hidden; 
-}
-.header-text {
-  position: absolute;
-  width: 100%;
-  top: 50%;
-  left: 0;
-  text-align: center;
-  color: #ffffff;
-}
-.header-caption {
-  font-size: 60px;
-  text-transform: uppercase;
-  letter-spacing: 6px;
-  margin: 15px;
-  font-family: "Nunito", sans-serif;
-  font-weight: bold; 
-}
-.header-caption:before {
-  content: "";
-  display: block;
-  width: 850px;
-  height: 4px;
-  background-color: #fff;
-  margin: auto;
-  margin-bottom: 15px;
-}
-.header-caption:after {
-  content: "";
-  display: block;
-  width: 850px;
-  height: 4px;
-  background-color: #fff;
-  margin: auto;
-  margin-top: 15px; 
-}
-.header-button-area {
-  position: absolute;
-  left: 50%;
-  margin-left: -30px;
-  bottom: 5%;
-  border: 3px solid #fff;
-  border-radius: 50%;
-  height: 60px;
-  width: 60px;
-  text-align: center; 
-  cursor: pointer;
-}
-.header-button-area:hover {
-  background-color: #fff;
-  -webkit-transition: all 0.5s ease-out;
-  -o-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out; }
-.header-button-area:hover span {
-  -webkit-transition: all 0.5s ease-out;
-  -o-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
-  border: 2px solid #000;
-  border-width: 0 4px 4px 0; }
-.header-button-area span {
-  border: 2px solid #fff;
-  border-width: 0 4px 4px 0;
-  display: inline-block;
-  margin-top: 14px;
-  padding: 7px;
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg); }
-
 .portfolio {
   margin-bottom: 50px; }
 .portfolio h2:after {
@@ -248,6 +246,7 @@
   display: -ms-flex;
   display: -o-flex;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
@@ -357,6 +356,7 @@
   display: -ms-flex;
   display: -o-flex;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
@@ -407,6 +407,7 @@
 .footer-top ul {
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   list-style-type: none;
   -webkit-box-pack: center;
@@ -416,6 +417,7 @@
 .footer-top li {
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   width: 50px;
   margin: 0 10px; }
@@ -441,7 +443,7 @@
     text-align: center;
   }
 }
-@media only screen and (max-width: 975px){
+@media only screen and (max-width: 975px){a
   .portfolio-item {
     width: 95%;
   }
