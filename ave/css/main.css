@@ -351,8 +351,9 @@ h1 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+    -webkit-flex-wrap--ms-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding: 0 5%;
   margin-bottom: 80px; }
 
@@ -847,8 +848,31 @@ h1 {
     width: 95%; } }
 
 @media only screen and (max-width: 415px) {
+  .page-header {
+    padding: 0 3%; }
   .header-search {
-    max-width: 130px; } }
+    max-width: 130px; }
+  h1 {
+    font-size: 100px; }
+  .header-text {
+    font-size: 12px; }
+  .toolbar-wrapper a {
+    padding: 10px 5px; }
+  .lookbook-item {
+    padding-top: 0;
+    padding-bottom: 30px; }
+    .lookbook-item h2 {
+      font-size: 16px; }
+    .lookbook-item p {
+      font-size: 13px; }
+  .lookbook-button {
+    padding: 10px 20px;
+    font-size: 14px; }
+  .banner-text p {
+    font-size: 18px; }
+  .footer-social {
+    width: 25px;
+    height: 25px; } }
 
 .container {
   margin: 0 auto;
