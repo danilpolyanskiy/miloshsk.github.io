@@ -1,6 +1,7 @@
 .toolbar {
   background-color: #333333;
   position: fixed;
+  height: 47px;
   top: 0;
   left: 0;
   width: 100%;
