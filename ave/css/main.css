@@ -339,11 +339,11 @@ h1 {
           transform: rotate(-45deg); }
 
 .products {
+  display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
@@ -354,7 +354,8 @@ h1 {
     -webkit-flex-wrap--webkit-box-pack: center;
     -webkit-flex-wrap--ms-flex-wrap: wrap;
       -webkit-flex-wrap--ms-flex-wrap-flex-wrap: wrap;
-  padding: 0 5%;
+  width: 97%;
+  margin: 0 auto;
   margin-bottom: 80px; }
 
 .product-wrapper {
