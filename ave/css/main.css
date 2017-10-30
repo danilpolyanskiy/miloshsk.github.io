@@ -351,9 +351,9 @@ h1 {
   -webkit-justify-content: space-between;
           justify-content: space-between;
   -webkit-flex-wrap: wrap;
-    -webkit-flex-wrap--webkit-box-pack: center;
-    -webkit-flex-wrap--ms-flex-wrap: wrap;
-      -webkit-flex-wrap--ms-flex-wrap-flex-wrap: wrap;
+  -webkit-box-pack:center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 97%;
   margin: 0 auto;
   margin-bottom: 80px; }
