@@ -113,7 +113,6 @@
   -webkit-box-direction: normal;
     -ms-flex-direction: column;
         flex-direction: column;
-}
   -webkit-justify-content: space-around;
       -ms-flex-pack: distribute;
           justify-content: space-around;
