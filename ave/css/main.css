@@ -195,6 +195,8 @@ h1 {
     .header-menu a:hover {
       color: #00c8c8; }
 .header-menu li {
+   -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
   flex-grow: 1;
 }
 .header-submenu-wrapper {
