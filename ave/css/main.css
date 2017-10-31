@@ -445,6 +445,8 @@ h1 {
     background-color: #00c8c8; }
 
 .lookbook-wrapper {
+  width: 97%;
+  margin: 0 auto;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
@@ -456,7 +458,7 @@ h1 {
       -ms-flex-pack: distribute;
           justify-content: space-around;
   margin-bottom: 100px;
-  padding: 0 3%; }
+}
 
 .lookbook-item-mens {
   background-image: url(../img/lookbook/mens.png);
