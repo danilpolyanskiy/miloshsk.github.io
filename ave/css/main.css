@@ -1,20 +1,15 @@
 .toolbar {
   background-color: #333333;
   position: fixed;
-  height: 47px;
   top: 0;
+  left: 0;
   width: 100%;
-  z-index: 1000; }
-
-.toolbar-wrapper {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
+  padding: 0 10px;
+  z-index: 1000;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 auto;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
@@ -22,15 +17,14 @@
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
-          align-items: center; 
-          width: 98%; }
-  .toolbar-wrapper a {
+          align-items: center; }
+  .toolbar a {
     color: #999999;
     text-decoration: none;
     font-family: "Montserrat", sans-serif;
     padding: 15px;
     font-size: 15px; }
-    .toolbar-wrapper a:not(.current-ballance):hover {
+    .toolbar a:not(.current-ballance):hover {
       background-color: #00c8c8;
       color: #fff; }
 
@@ -353,9 +347,9 @@ h1 {
   -webkit-justify-content: space-between;
           justify-content: space-between;
   -webkit-flex-wrap: wrap;
-  -webkit-box-pack:center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+    -webkit-flex-wrap--webkit-box-pack: center;
+    -webkit-flex-wrap--ms-flex-wrap: wrap;
+      -webkit-flex-wrap--ms-flex-wrap-flex-wrap: wrap;
   width: 97%;
   margin: 0 auto;
   margin-bottom: 80px; }
