@@ -188,8 +188,7 @@ h1 {
           box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
   max-width: 410px;
   width: 100%;
-  padding: 30px;
-  padding-top: 0; }
+  padding: 30px; }
 
 .header-menu-mens:hover .header-submenu-wrapper {
   visibility: visible; }
@@ -217,8 +216,8 @@ h1 {
   font-size: 12px;
   color: #575153;
   text-transform: uppercase;
-  font-weight: bold;
-  margin: 30px 0; }
+  font-weight: bold; 
+  margin-bottom: 30px}
 
 .header-submenu li {
   padding: 7px 0; }
