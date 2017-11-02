@@ -75,25 +75,27 @@
   padding: 15px 40px;
   padding-left: 60px;
   position: relative; }
-  .toolbar-column .toolbar-basket:before {
-    content: '';
-    display: block;
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    left: 10%;
-    top: 30%;
-    background-image: url(../img/svg/basket.svg);
-    background-size: 100%; }
-  .toolbar-column .toolbar-basket span {
-    display: block;
-    position: absolute;
-    top: 40%;
-    right: 24px;
-    width: 10px;
-    height: 10px;
-    background-image: url(../img/svg/down-arrow.svg);
-    background-size: 100%; }
+
+.toolbar-basket-icon {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 10%;
+  top: 30%;
+  background-image: url(../img/svg/basket.svg);
+  background-size: 100%; }
+
+.toolbar-arrow {
+  display: block;
+  position: absolute;
+  top: 40%;
+  right: 24px;
+  width: 10px;
+  height: 10px;
+  background-image: url(../img/svg/down-arrow.svg);
+  background-size: 100%; }
 
 .page-header {
   height: 100vh;
@@ -824,7 +826,7 @@ h1 {
   .toolbar-column .toolbar-basket {
     padding-right: 5px;
     padding-left: 30px; }
-    .toolbar-column .toolbar-basket span {
+    .toolbar-column .toolbar-basket .toolbar-arrow {
       display: none; }
   .header-button-wrapper {
     right: 5%;
@@ -874,6 +876,15 @@ h1 {
   .footer-social {
     width: 25px;
     height: 25px; } }
+
+@media only screen and (max-width: 360px) {
+  .toolbar a {
+    font-size: 12px; }
+  .toolbar-basket-icon {
+    width: 15px;
+    height: 15px; }
+  .header-search {
+    max-width: 110px; } }
 
 .container {
   margin: 0 auto;
