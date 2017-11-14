@@ -746,7 +746,7 @@ h1 {
     height: 0;
     overflow: hidden;
     position: absolute;
-    top: 40px;
+    top: 80px;
     left: 0;
     z-index: 100;
     background-color: #999999;
@@ -887,7 +887,14 @@ h1 {
     height: 15px; }
   .header-search {
     max-width: 110px; } }
-
+@media only screen and (max-width: 330px) {
+  .header-top-row {
+    justify-content: flex-start;
+  }
+  .header-text {
+    margin-right: 5px;
+  }
+}
 .container {
   margin: 0 auto;
   max-width: 1170px;
