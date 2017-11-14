@@ -103,7 +103,6 @@
   background-repeat: no-repeat;
   background-color: #f8f8f8;
   background-size: contain;
-  padding: 0 5%;
   padding-top: 60px;
   margin-bottom: 60px;
   overflow: hidden; }
@@ -141,6 +140,7 @@ h1 {
           align-items: center;
   width: 100%;
   position: relative;
+  padding: 20px 5%;
   margin-bottom: 80px; }
 
 .header-text {
@@ -279,8 +279,8 @@ h1 {
   width: 40px;
   height: 40px;
   cursor: pointer;
-  right: 0;
-  top: 0;
+  right: 35px;
+  top: 20px;
   z-index: 100; }
 
 .hide-line {
@@ -820,7 +820,7 @@ h1 {
   .header-text {
     font-size: 16px; } }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 505px) {
   .toolbar a {
     font-size: 14px; }
   .toolbar-column .toolbar-basket {
@@ -840,6 +840,8 @@ h1 {
   .toolbar-wrapper .current-ballance {
     padding-left: 0;
     padding-right: 15px; }
+  .header-search {
+    max-width: 130px; }
   .products {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
@@ -848,13 +850,11 @@ h1 {
   .product-wrapper {
     width: 95%; } }
 
-@media only screen and (max-width: 415px) {
+@media only screen and (max-width: 420px) {
   .toolbar .current-ballance {
     padding: 15px 15px 15px 0; }
   .toolbar a {
     padding: 15px 5px; }
-  .header-search {
-    max-width: 130px; }
   h1 {
     font-size: 100px; }
   .header-text {
@@ -877,7 +877,7 @@ h1 {
     width: 25px;
     height: 25px; } }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 370px) {
   .toolbar a {
     font-size: 12px; }
   .toolbar-basket-icon {
