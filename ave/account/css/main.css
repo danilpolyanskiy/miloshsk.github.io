@@ -883,7 +883,9 @@
     width: 25px;
     height: 25px; } }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 370px) {
+  .hide-menu {
+    right: 15px; }
   .toolbar a {
     font-size: 12px; }
   .toolbar-basket-icon {
@@ -891,7 +893,14 @@
     height: 15px; }
   .header-search {
     max-width: 110px; } }
-
+@media only screen and (max-width: 330px) {
+  .header-top-row {
+    justify-content: flex-start;
+  }
+  .header-text {
+    margin-right: 5px;
+  }
+}
 .container {
   margin: 0 auto;
   max-width: 1170px;
