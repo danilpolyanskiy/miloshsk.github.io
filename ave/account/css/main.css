@@ -738,7 +738,7 @@
     top: 80px;
     left: 0;
     z-index: 100;
-    background-color: #999999;
+    background-color: #fff;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
     padding: 0; }
