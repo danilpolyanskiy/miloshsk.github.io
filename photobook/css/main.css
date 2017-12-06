@@ -165,21 +165,23 @@ ul {
 
 .header-nav-list {
   width: 100%;
-  position: absolute;
-  top: 10px;
+  position: fixed;
+  top: 60px;
   height: 0;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   list-style-type: none;
   background-color: #fff;
   padding: 0;
-  overflow: hidden; }
+  overflow: hidden;
+  z-index: 10; }
   .header-nav-list a {
     display: block;
     font-size: 34px;
     padding: 10px 0;
     font-weight: 400;
-    color: #000; }
+    color: #000;
+    background-color: #fff; }
     .header-nav-list a:hover {
       background-color: #e11a27;
       color: #fff; }
