@@ -6,11 +6,13 @@
 	<!-- Css styles -->
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/animate.css">
 	<!-- Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600" rel="stylesheet">
 	<!-- Js styles -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 	<script src="js/custom.js"></script>
+	<script src="js/wow.js"></script>
 	<title>Photobook</title>
 </head>
 <body>
@@ -26,7 +28,7 @@
 						<span class="header-menu-line m-line"></span>
 						<span class="header-menu-line b-line"></span>
 					</div>
-					<a href="#" class="header-logo">Photobook</a>
+					<a href="#" id="home" class="header-logo">Photobook</a>
 					<a href="tel:+11 2235 813 2134" class="header-phone">+11 2235 813 2134</a>
 					<a href="#" class="header-login"></a>	
 				</div>
@@ -37,44 +39,46 @@
 		<nav class="header-nav">
 			<ul class="header-nav-list">
 				<li><a href="#">Home</a></li>
-				<li><a href="#">Steps</a></li>
-				<li><a href="#">Advantage</a></li>
-				<li><a href="#">Solutions</a></li>
-				<li><a href="#">Testimonials</a></li>
-				<li><a href="#">Info</a></li>
-				<li><a href="#">Footer</a></li>
+				<li><a href="#scroll-steps">Steps</a></li>
+				<li><a href="#advantage-scroll">Advantage</a></li>
+				<li><a href="#scroll-solutions">Solutions</a></li>
+				<li><a href="#scroll-testimonials">Testimonials</a></li>
+				<li><a href="#scroll-info">Info</a></li>
+				<li><a href="#scroll-footer">Footer</a></li>
 			</ul>
 		</nav>
-		<h2 class="header-caption">Create your own photostory</h2>
-		<p class="header-text">Make your photobook online</p>
-		<a href="#" class="button">Make your photobook</a>
+		<div class="header-info">
+			<h2 class="header-caption">Create your own photostory</h2>
+			<p class="header-text">Make your photobook online</p>
+			<a href="#" class="button">Make your photobook</a>
+		</div>
 	</header>
 	<!-- Steps section -->
 	<div class="steps">
 		<div class="container">
-			<div class="steps-wrapper">
-				<div class="steps-item">
+			<div class="steps-wrapper" id="scroll-steps">
+				<div class="steps-item wow slideInUp">
 					<div class="steps-icon-wrapper">
 						<span class="steps-item-icon download">
 						</span>
 					</div>
 					<p>Download photos</p>
 				</div>
-				<div class="steps-item">
+				<div class="steps-item wow slideInUp">
 					<div class="steps-icon-wrapper">
 						<span class="steps-item-icon design">
 						</span>
 					</div>
 					<p>Design your photobook</p>
 				</div>
-				<div class="steps-item">
+				<div class="steps-item wow slideInUp">
 					<div class="steps-icon-wrapper">
 						<span class="steps-item-icon pay">
 						</span>
 					</div>
 					<p>Pay for service</p>
 				</div>
-				<div class="steps-item">
+				<div class="steps-item wow slideInUp">
 					<div class="steps-icon-wrapper">
 						<span class="steps-item-icon get">
 						</span>
@@ -88,19 +92,19 @@
 	<section class="advantage">
 		<div class="container">
 			<div class="advantage-wrapper">
-				<h2>Advantage</h2>
+				<h2 id="advantage-scroll">Advantage</h2>
 				<div class="advantage-item-wrapper">
-					<div class="advantage-item">
+					<div class="advantage-item wow zoomIn">
 						<div class="advantage-item-pic advantage-social"></div>
 						<h3>Import photos</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem aliquam sapiente id reprehenderit eligendi, delectus dicta quasi, quia obcaecati quam non esse sed aspernatur dignissimos ducimus animi veniam earum! Recusandae?</p>
 					</div>
-					<div class="advantage-item">
+					<div class="advantage-item wow zoomIn">
 						<div class="advantage-item-pic advantage-edit"></div>
 						<h3>Photo editing </h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga cupiditate aspernatur blanditiis magni molestiae, saepe dolor eum dolorum eius, quos eaque quas maiores repellat cum harum quidem qui incidunt sed?</p>
 					</div>
-					<div class="advantage-item">
+					<div class="advantage-item wow zoomIn">
 						<div class="advantage-item-pic advantage-templates"></div>
 						<h3>Templates</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur expedita id aperiam eius sapiente deserunt, optio dicta rem repudiandae sed dolorem ratione blanditiis fugit, nesciunt incidunt eligendi et quasi, quam!</p>
@@ -113,10 +117,10 @@
 <!-- Solutions section -->
 	<section class="solitions">
 		<div class="container">
-			<div class="solitions-wrapper">
+			<div class="solitions-wrapper" id="scroll-solutions">
 				<h2>Ready solitions</h2>
 				<div class="solitions-items-wrapper">
-					<div class="solitions-item">
+					<div class="solitions-item wow slideInLeft">
 						<h3>LightBook</h3>
 						<div class="solitions-info">
 							<ul class="solitions-ul">
@@ -128,7 +132,7 @@
 						</div>
 						<p class="solitions-bottom-text">Make your LightBook</p>
 					</div>
-					<div class="solitions-item ">	
+					<div class="solitions-item  wow slideInUp">	
 						<p class="bestseller">bestseller</p>
 						<h3>ClassicBook</h3>
 						<div class="solitions-info">
@@ -142,7 +146,7 @@
 						</div>
 						<p class="solitions-bottom-text">Make your ClassicBook</p>
 					</div>
-					<div class="solitions-item">
+					<div class="solitions-item wow slideInRight">
 						<h3>PremiumBook</h3>
 						<div class="solitions-info">
 							<ul class="solitions-ul">
@@ -165,7 +169,7 @@
 		<div class="container">
 			<div class="testimonials-wrapper">
 				<h2>Testimonials</h2>
-				<div class="testimonials-person">
+				<div class="testimonials-person" id="scroll-testimonials">
 					<div class="testimonials-pic"></div>
 						<div class="testimonials-person-row">
 							<p class="name">John Doe</p>
@@ -185,33 +189,33 @@
 <!-- Info section -->
 	<div class="info">
 		<div class="container">
-			<div class="info-wrapper">
+			<div class="info-wrapper" id="scroll-info">
 				<div class="info-items-wrapper">
-					<div class="info-item">
-					<h3>Terms</h3>
-					<div class="info-item-text">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
-						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.</p>
+					<div class="info-item wow slideInUp">
+						<h3>Terms</h3>
+						<div class="info-item-text">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+							<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.</p>
+						</div>
 					</div>
+					<div class="info-item wow slideInUp">
+						<h3>Payment</h3>
+						<div class="info-item-text">
+							<p>Payment methods</p>
+							<ul>
+								<li>VISA</li>
+								<li>MasterCard</li>
+								<li>PayPal</li>
+								<li>American Express</li>
+							</ul>
+						</div>
 					</div>
-					<div class="info-item">
-					<h3>Payment</h3>
-					<div class="info-item-text">
-						<p>Payment methods</p>
-						<ul>
-							<li>VISA</li>
-							<li>MasterCard</li>
-							<li>PayPal</li>
-							<li>American Express</li>
-						</ul>
-					</div>
-					</div>
-					<div class="info-item">
-					<h3>Shipping</h3>
-					<div class="info-item-text">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-						<strong>Free shipping for PremiumBook</strong>
-					</div>
+					<div class="info-item wow slideInUp">
+						<h3>Shipping</h3>
+						<div class="info-item-text">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							<strong>Free shipping for PremiumBook</strong>
+						</div>
 					</div>
 				</div>
 				<a href="#" class="button button-red">Make your photobook</a>
@@ -221,7 +225,7 @@
 <!--Page footer -->
 	<footer class="page-footer">
 		<div class="container">
-			<div class="footer-wrapper">
+			<div class="footer-wrapper" id="scroll-footer">
 				<div class="footer-column">
 					<ul>
 						<li><a href="#">About us</a></li>
