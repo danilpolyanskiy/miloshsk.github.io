@@ -7,7 +7,7 @@ body {
   width: 97%; }
 
 h2 {
-  margin: 50px 0;
+  margin: 0;
   font-weight: 100;
   font-size: 60px; }
 
@@ -64,14 +64,20 @@ ul {
   background-size: cover;
   background-position: 50% 0;
   text-align: center;
-  height: 100vh;
-  min-height: 550px; }
+  height: 100vh; }
 
 .header-top-row {
-  position: relative;
+  position: fixed;
   background-color: #fff;
+  top: 0;
+  left: 0;
+  right: 0;
   padding: 20px 0;
   z-index: 10; }
+
+.top-row-shadow {
+  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3); }
 
 .header-top-row-wrapper {
   display: -webkit-box;
@@ -99,6 +105,8 @@ ul {
   padding: 5px 20px;
   -webkit-border-radius: 25px;
           border-radius: 25px; }
+  .header-phone:hover {
+    background-color: #C6A300; }
 
 .header-login {
   display: block;
@@ -109,6 +117,9 @@ ul {
   position: absolute;
   top: 0;
   right: 0; }
+
+.header-info {
+  padding-top: 200px; }
 
 .header-text {
   font-weight: 300;
@@ -155,7 +166,7 @@ ul {
 .header-nav-list {
   width: 100%;
   position: absolute;
-  top: 60px;
+  top: 10px;
   height: 0;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
@@ -174,7 +185,7 @@ ul {
       color: #fff; }
 
 .active-menu {
-  height: 300px; }
+  height: 420px; }
 
 .steps {
   padding-top: 50px;
@@ -248,8 +259,10 @@ ul {
 
 .advantage {
   background-color: #f3f0e7;
-  padding-top: 10px;
+  padding-top: 40px;
   padding-bottom: 100px; }
+  .advantage h2 {
+    margin-bottom: 50px; }
 
 .advantage-wrapper {
   text-align: center; }
@@ -300,6 +313,7 @@ ul {
 
 .solitions-wrapper {
   text-align: center;
+  padding-top: 40px;
   padding-bottom: 110px; }
   .solitions-wrapper h2 {
     margin-bottom: 90px; }
@@ -558,6 +572,8 @@ ul {
     width: 25px;
     height: 25px;
     margin-right: 20px; }
+    .footer-social-ul .footer-social-link:hover {
+      opacity: 0.8; }
   .footer-social-ul .fb {
     background-image: url(../img/svg/facebook.svg);
     background-size: 100%;
@@ -664,6 +680,8 @@ ul {
     font-size: 24px; }
   .header-phone {
     font-size: 14px; }
+  .header-caption {
+    margin-top: 50px; }
   .advantage {
     padding-bottom: 50px; }
   .advantage-item-wrapper {
@@ -694,6 +712,9 @@ ul {
     height: 120px;
     margin-right: 10px; } }
 
-@media only screen and (max-width: 330px) {
+@media only screen and (max-width: 340px) {
   .button {
-    font-size: 20px; } }
+    font-size: 20px; }
+  .header-phone {
+    font-size: 12px;
+    padding: 5px 10px; } }
