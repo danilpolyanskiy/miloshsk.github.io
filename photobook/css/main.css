@@ -21,10 +21,8 @@ h3 {
   text-align: center;
   background-color: #ffd200;
   padding: 15px 0;
-  -webkit-border-top-left-radius: 15px;
-          border-top-left-radius: 15px;
-  -webkit-border-top-right-radius: 15px;
-          border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
   margin-bottom: 5px; }
 
 a {
@@ -37,9 +35,9 @@ a {
   color: #000;
   border: 1px solid #000;
   padding: 20px 35px;
-  -webkit-border-radius: 10px;
-          border-radius: 10px;
+  border-radius: 10px;
   -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
   transition: 0.3s ease; }
   .button:hover {
     background-color: #e11a27;
@@ -81,11 +79,9 @@ ul {
 
 .header-top-row-wrapper {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 0 60px;
@@ -103,8 +99,7 @@ ul {
   color: #000;
   font-weight: 300;
   padding: 5px 20px;
-  -webkit-border-radius: 25px;
-          border-radius: 25px; }
+  border-radius: 25px; }
   .header-phone:hover {
     background-color: #C6A300; }
 
@@ -152,6 +147,7 @@ ul {
   background-color: #000;
   position: absolute;
   -webkit-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
   transition: 0.5s ease; }
 
 .t-line {
@@ -169,6 +165,7 @@ ul {
   top: 60px;
   height: 0;
   -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
   list-style-type: none;
   background-color: #fff;
@@ -194,14 +191,16 @@ ul {
   padding-bottom: 70px; }
 
 .steps-wrapper {
- display: -webkit-box;
- display: -webkit-flex;
- display: -ms-flexbox;
- display: flex;
- -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   padding: 0 25px; }
 
 .steps-item {
@@ -218,18 +217,14 @@ ul {
   width: 130px;
   height: 130px;
   border: 6px solid #ffd200;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
+  border-radius: 50%;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
-  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center; }
   .steps-icon-wrapper .steps-item-icon {
@@ -269,11 +264,9 @@ ul {
 
 .advantage-item-wrapper {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 100px; }
@@ -294,8 +287,7 @@ ul {
 .advantage-item-pic {
   width: 270px;
   height: 270px;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
+  border-radius: 50%;
   margin: 0 auto;
   margin-bottom: 30px; }
 
@@ -322,11 +314,9 @@ ul {
 
 .solitions-items-wrapper {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between; }
 
@@ -336,8 +326,7 @@ ul {
   max-width: 310px;
   width: 100%;
   background-color: #ffd200;
-  -webkit-border-radius: 10px;
-          border-radius: 10px;
+  border-radius: 10px;
   position: relative; }
 
 .solitions-bottom-text {
@@ -423,22 +412,18 @@ ul {
 
 .testimonials-person {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
       -ms-flex-pack: start;
           justify-content: flex-start; }
   .testimonials-person .testimonials-pic {
     width: 160px;
     height: 160px;
-    -webkit-border-radius: 50%;
-            border-radius: 50%;
+    border-radius: 50%;
     background-image: url(../img/testimonials-person.jpg);
     margin-right: 30px; }
   .testimonials-person .name {
@@ -486,11 +471,9 @@ ul {
 
 .info-items-wrapper {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 95px; }
@@ -507,10 +490,8 @@ ul {
   padding-top: 10px;
   font-size: 18px;
   font-weight: 400;
-  -webkit-border-bottom-left-radius: 15px;
-          border-bottom-left-radius: 15px;
-  -webkit-border-bottom-right-radius: 15px;
-          border-bottom-right-radius: 15px; }
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px; }
   .info-item-text strong {
     color: #e11a27; }
   .info-item-text li {
@@ -525,16 +506,13 @@ ul {
 
 .footer-wrapper {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-bottom: 80px; }
 
 .footer-column {
@@ -565,7 +543,6 @@ ul {
 
 .footer-social-ul {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
   .footer-social-ul .footer-social-link {
@@ -598,7 +575,6 @@ ul {
   .advantage-item-wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column; }
   .advantage-item {
@@ -638,11 +614,9 @@ ul {
   .solitions-items-wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
     -webkit-box-align: center;
-    -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center; }
   .solitions-item {
@@ -653,11 +627,9 @@ ul {
   .info-items-wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
     -webkit-box-align: center;
-    -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center; }
   .info-item {
@@ -680,8 +652,6 @@ ul {
     font-size: 24px; }
   .header-phone {
     font-size: 14px; }
-  .header-info {
-    padding-top: 100px; }
   .header-caption {
     margin-top: 50px; }
   .advantage {
