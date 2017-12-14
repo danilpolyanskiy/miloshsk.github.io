@@ -367,6 +367,8 @@
 
 .location-item {
   padding: 0 5px;
+  max-width: 370px;
+  width: 100%;
   padding-bottom: 40px;
   position: relative; }
 
