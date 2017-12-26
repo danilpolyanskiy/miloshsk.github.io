@@ -5,8 +5,8 @@ $(document).ready(function(){
         slidesToShow: 4,
         dots: true,
         slidesToScroll: 2,
-        // autoplay: true,
-        // autoplaySpeed: 1500,
+        autoplay: true,
+        autoplaySpeed: 1500,
         responsive: [
             {
                 breakpoint: 1150,
@@ -20,6 +20,15 @@ $(document).ready(function(){
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 420,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    dots: false,
+                    autoplay: false
                 }
             }
         ]
