@@ -147,7 +147,7 @@
     right: 0;
     border-right: solid 0 #f34949;
     border-top: solid 20px #f34949;
-    border-left: solid 73px #fff;
+    border-left: solid 72.5px #fff;
     border-bottom: solid 0 #fff; }
   .menu-caption:before {
     content: '';
@@ -155,7 +155,7 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    border-right: solid 73px #fff;
+    border-right: solid 72.5px #fff;
     border-top: solid 20px #f34949;
     border-left: solid 0 #f34949;
     border-bottom: solid 0 #fff; }
