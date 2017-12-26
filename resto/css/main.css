@@ -148,7 +148,7 @@
     border-right: solid 0 #f34949;
     border-top: solid 20px #f34949;
     border-left: solid 72.5px #fff;
-    border-bottom: solid 0 #fff; }
+    border-bottom: solid 5px #fff; }
   .menu-caption:before {
     content: '';
     display: block;
@@ -158,7 +158,7 @@
     border-right: solid 72.5px #fff;
     border-top: solid 20px #f34949;
     border-left: solid 0 #f34949;
-    border-bottom: solid 0 #fff; }
+    border-bottom: solid 5px #fff; }
 
 .menu-items-wrapper {
   display: -webkit-box;
