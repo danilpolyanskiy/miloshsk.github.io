@@ -652,6 +652,8 @@ ul {
     padding-top: 120px; }
   .header-phone {
     font-size: 14px; }
+  .header-text{
+    margin-bottom: 0; }
   .header-caption {
     margin-top: 50px; }
   .header-nav-list a {
