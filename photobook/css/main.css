@@ -652,6 +652,10 @@ ul {
     font-size: 14px; }
   .header-caption {
     margin-top: 50px; }
+  .header-nav-list a {
+    font-size: 26px;}
+  .active-menu {
+    height: 350px;}
   .advantage {
     padding-bottom: 50px; }
   .advantage-item-wrapper {
