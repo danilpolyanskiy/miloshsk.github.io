@@ -677,6 +677,8 @@ ul {
 @media only screen and (max-width: 380px) {
   h2 {
     font-size: 40px; }
+  .header-info {
+    padding-top: 120px; }
   .header-top-row-wrapper {
     padding: 0 40px; }
   .solitions-wrapper {
