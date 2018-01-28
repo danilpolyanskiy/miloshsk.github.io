@@ -798,9 +798,9 @@
 
 @media only screen and (max-width: 440px) {
   .header-top-line {
-    margin-bottom: 70px; }
+    margin-bottom: 50px; }
   .header-button-area {
-    bottom: 10%; }
+    bottom: 15%; }
   .services {
     padding-top: 40px;
     padding-bottom: 40px; }
