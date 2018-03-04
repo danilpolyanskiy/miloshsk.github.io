@@ -20,21 +20,28 @@
 <!-- Page header -->
 	<header class="page-header">
 	<nav class="menubar">
-		<a href="#" id="home"><img src="img/cat.svg" width="30" height="30" alt="Logo"></a>
+		<a href="#" id="home">
+			<img src="img/responsive.svg" width="30" height="30"  alt="Logo"></a>
 		<ul class="mainmenu">
-			<li><a href="#portfolio-scroll" class="mainmenu-link">Портфолио</a></li>
-			<li><a href="#about-scroll" class="mainmenu-link">Инфо</a></li>
-			<li><a href="#contact-scroll" class="mainmenu-link">Контакты</a></li>
+			<li class="mainmenu-list">
+				<a href="#portfolio-scroll" class="mainmenu-link">Портфолио</a>
+			</li>
+			<li class="mainmenu-list">
+				<a href="#about-scroll" class="mainmenu-link">Инфо</a>
+			</li>
+			<li class="mainmenu-list">
+				<a href="#contact-scroll" class="mainmenu-link">Контакты</a>
+			</li>
 		</ul>
-		<div class="hide-menu">
-			<span class="hide-line hide-line-top"></span>
-			<span class="hide-line hide-line-middle"></span>
-			<span class="hide-line hide-line-bottom"></span>
-		</div>
 	</nav>
+	<div class="hide-menu">
+		<span class="hide-line hide-line-top"></span>
+		<span class="hide-line hide-line-middle"></span>
+		<span class="hide-line hide-line-bottom"></span>
+	</div>
 	<div class="container">
 		<div class="header-text">	
-			<h1 class="header-caption">Web graphic designer</h1>
+			<h1 class="header-caption">Just a portfolio site</h1>
 		</div>
 		<div class="header-button-area">
 			<span></span>
@@ -132,13 +139,13 @@
 
 	<section class="contact">
 		<div class="container">
-				<h2 id="contact-scroll">Связаться со мной</h2>
-				<form action="url" name="send-message" class="contact-form">
-					<input type="text" name="name" class="contact-form-item" placeholder="Имя">
-					<input type="email" name="email" class="contact-form-item" placeholder="E-mail">
-					<textarea name="message" id="message" rows="5" class="contact-form-item" placeholder="Сообщение"></textarea>
-					<button type="submit" class="contact-form-item contact-button">Отправить</button>
-				</form>
+			<h2 id="contact-scroll">Связаться со мной</h2>
+			<form action="url" name="send-message" class="contact-form">
+				<input type="text" name="name" class="contact-form-item" placeholder="Имя">
+				<input type="email" name="email" class="contact-form-item" placeholder="E-mail">
+				<textarea name="message" id="message" rows="5" class="contact-form-item" placeholder="Сообщение"></textarea>
+				<input type="submit" class="contact-form-item contact-button">
+			</form>
 		</div>
 
 	</section>
@@ -149,7 +156,7 @@
 		<div class="container">	
 			<div class="footer-top">
 				<p>Быстрая связь</p>
-				<ul>
+				<ul class="footer-links">
 					<li><a class="skype-icon" href="javascript:void(0);"></a></li>
 					<li><a class="vk-icon" href="javascript:void(0);"></a></li>
 				</ul>
