@@ -7,12 +7,11 @@ $(document).ready(function() {
 //Mobile menu
 	$('.hide-menu').click(function() {
 		$(this).toggleClass('active-menu'),
-		$('.menubar').toggleClass('menubar-mobile'),
-		$('.mainmenu').toggleClass('mainmenu-hide')
+		$('.menubar').toggleClass('menubar-mobile')
 	});
 
 	$('.mainmenu-link').click(function() {
-		$('.mainmenu').toggleClass('mainmenu-hide'),
+		$('.menubar').toggleClass('menubar-mobile'),
 		$('.hide-menu').toggleClass('active-menu')
 	});
 	//Scrolling		   
