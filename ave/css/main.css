@@ -672,7 +672,6 @@ h1 {
     font-size: 26px; }
   .lookbook-item p {
     font-size: 13px; } }
-
 @media only screen and (max-width: 940px) {
   h1 {
     font-size: 250px; }
@@ -932,3 +931,22 @@ img {
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
+
+@media only screen and (max-width: 940px) and (orientation: landscape) {
+  .header-menu {
+    justify-content: flex-start;
+  }
+  .header-menu-show {
+    height: 200px;
+  }
+  .header-menu li {
+    flex-grow: 0;
+  }
+  .header-menu a {
+    padding: 7px 0;
+    font-size: 20px;
+  }
+  .header-top-row {
+    margin: 0;
+  }
+}

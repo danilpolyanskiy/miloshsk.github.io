@@ -12,7 +12,6 @@
   background-color: #fff;
   z-index: 10;
   padding: 15px 0;
-  overflow: hidden;
   -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
           box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3); }
 
@@ -48,7 +47,7 @@
     font-family: "Aleo";
     font-size: 14px;
     color: #3b3b3b;
-    padding: 30px 15px; }
+    padding: 22px 15px; }
     .header-menu a:hover {
       background-color: #f34949; }
 
@@ -56,7 +55,8 @@
   font-family: "WC Mano Negra Bta";
   color: #3a3a3a;
   font-size: 30px;
-  line-height: 30px; }
+  line-height: 30px;
+  z-index: 20; }
   .header-logo span {
     color: #f34949; }
 
@@ -109,7 +109,8 @@
   height: 2px;
   width: 100%;
   position: absolute;
-  background-color: #000; }
+  background-color: #000; 
+  transition: 0.3s ease;}
 
 .t-l {
   top: 2px; }
@@ -119,6 +120,12 @@
 
 .b-l {
   top: 22px; }
+.active-menu .t-l {
+ top: 12px; transform: rotate(-45deg); }
+.active-menu .m-l {
+  transform: rotate(-45deg);}
+.active-menu .b-l {
+ top: 12px; transform: rotate(45deg); }
 
 .menu {
   position: relative;
@@ -375,6 +382,11 @@
     .footer-item .footer-logo span {
       color: #f34949; }
 
+@media only screen and (max-width: 890px) and (orientation: landscape) {
+  .header-text h1 {
+    font-size: 50px
+  }
+}
 @media only screen and (max-width: 890px) {
   .menu-item .column-line:before {
     width: 100px; }
@@ -392,8 +404,35 @@
     width: 50%; } }
 
 @media only screen and (max-width: 645px) {
+  .header-nav-wrapper {
+    box-shadow: none;
+  }
   .header-menu {
-    display: none; }
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column; 
+    position: absolute;
+    top: 60px;
+    right: 0;
+    left: 0;
+    max-width: 100%;
+    background-color: #fff;
+    transform: translateY(-150%);
+    transition: 0.3s ease;}
+  .header-menu li {
+    width: 100%;
+    text-align: center;
+  }
+  .header-menu a {
+    display: block;
+    padding: 15px 0;
+    width: 100%;
+  }
+  .active-menu {
+     transform: translateY(0);
+  }
   .hide-menu {
     display: block; }
   .gallery-items-wrapper {
