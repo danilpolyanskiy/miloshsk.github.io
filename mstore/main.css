@@ -145,7 +145,8 @@
   height: 35px;
   position: absolute;
   right: 15px;
-  cursor: pointer; }
+  cursor: pointer;
+  z-index: 20; }
   .hide-menu .line-top {
     top: 6px; }
   .hide-menu .line-middle {
@@ -162,7 +163,9 @@
   -webkit-transition: 0.3s ease;
   -o-transition: 0.3s ease;
   transition: 0.3s ease; }
-
+.hide-menu-active {
+	top: 0;
+	right: 20px; }
 .hide-menu-active .line-top {
   top: 16px;
   -webkit-transform: rotate(45deg);
@@ -981,7 +984,7 @@ h2 {
     margin: 0;
     position: fixed;
     right: 0;
-    top: 115px;
+    top: 0;
     bottom: 0;
     background-color: #fff;
     -webkit-transform: translateX(100%);
@@ -999,10 +1002,7 @@ h2 {
       .header-nav .header-menu li {
         -webkit-box-flex: 0;
             -ms-flex-positive: 0;
-                flex-grow: 0;
-        border-top: 1px solid #252525; }
-        .header-nav .header-menu li:last-child {
-          border-bottom: 1px solid #252525; }
+                flex-grow: 0; }
   .hide-menu {
     display: block; }
   .header-icons {
