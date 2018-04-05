@@ -778,10 +778,8 @@ h2 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-align-items: center;
+  align-items: center;
   position: relative;
   margin: 20px 0;
   margin-top: 15px; }
@@ -826,10 +824,7 @@ h2 {
 .stars {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  position: absolute;
-  right: 7px;
-  top: 18px; }
+  display: flex; }
   .stars .fa {
     color: #eecf00;
     width: 10px;

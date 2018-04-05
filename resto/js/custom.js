@@ -38,5 +38,22 @@ $(document).ready(function(){
         $(this).toggleClass('active-menu'),
         $('.header-menu').toggleClass('active-menu')
     });
+    $('.hidden').hide();
+    $('.load-more').click(function(e) {
+        $('#load-icon').toggleClass('arrow-toggle');
+        $('.hidden').slideToggle();
+    })
+    //Scroll
+    $(window).scroll(function() {
+        if($(this).scrollTop() > 500) {
+            $('#scroll-btn').css('opacity', '1');
+        } else {
+            $('#scroll-btn').css('opacity', '0');
+        }
+    });
+    $('#scroll-btn').click(function() {
+        $('html, body').animate({scrollTop : 0},800);
+        return false;
+    });
 });
 	

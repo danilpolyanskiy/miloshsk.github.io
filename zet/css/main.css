@@ -179,10 +179,6 @@
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap; }
@@ -192,6 +188,18 @@
   height: 125px; }
 
 .services-item {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+  -ms-align-items: center;
+  align-items: center;
   -webkit-flex-basis: 23%;
       -ms-flex-preferred-size: 23%;
           flex-basis: 23%;
@@ -343,11 +351,9 @@
   margin-bottom: 100px; }
 
 .team-item {
-  -webkit-flex-basis: 25%;
-      -ms-flex-preferred-size: 25%;
-          flex-basis: 25%;
+  max-width: 275px;
+  width: 100%;
   background-color: #c8cdcf;
-  padding-bottom: 30px;
   margin: 0 15px; }
   .team-item:first-child {
     margin-left: 0; }
@@ -358,20 +364,35 @@
   .team-item .name {
     font-family: "Montserrat";
     font-size: 15px;
+    line-height: 18px;
     font-weight: bold;
     color: #29323c;
-    margin: 5px 0;
-    margin-top: 30px; }
+    margin: 0; }
   .team-item .position {
     font-family: "Montserrat";
     font-size: 14px;
-    color: #29323c;
-    margin: 5px 0;
-    margin-bottom: 20px; }
+    line-height: 18px;
+    color: #29323c; 
+    margin: 0;}
   .team-item a {
     display: block;
     position: relative; }
-
+  .team-item-description {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px 0;
+    padding: 0 15px;
+    text-align: center;
+  }
 .team-overlay {
   position: absolute;
   top: 0;
@@ -416,7 +437,8 @@
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center; 
+  margin: 20px 0;}
 
 .social {
   width: 25px;
@@ -740,14 +762,7 @@
    .page-nav {
     width: 45%; }
 }
-@media only screen and (max-width: 900px) {
-
-  .work-item {
-    -webkit-flex-basis: 33%;
-        -ms-flex-preferred-size: 33%;
-            flex-basis: 33%; } }
-
-@media only screen and (max-width: 830px) {
+@media only screen and (max-width: 950px) {
   .team-items-wrapper {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
@@ -756,16 +771,21 @@
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center; }
-  .team-item {
-    -webkit-flex-basis: 40%;
-        -ms-flex-preferred-size: 40%;
-            flex-basis: 40%;
-    margin: 15px;
-    margin-top: 0; }
     .team-item:first-child {
       margin-left: 15px; }
     .team-item:last-child {
       margin-right: 15px; } }
+  .team-item {
+    width: 40%;
+    margin: 15px;
+    margin-top: 0; }
+}
+@media only screen and (max-width: 900px) {
+  .work-item {
+    -webkit-flex-basis: 33%;
+        -ms-flex-preferred-size: 33%;
+            flex-basis: 33%; } 
+}
 
 @media only screen and (max-width: 800px) {
   .services-item {
@@ -830,6 +850,12 @@
         -ms-flex-direction: column;
             flex-direction: column; } }
 
+@media only screen and (max-width: 550px) {
+  .team-item {
+    -webkit-flex-basis: 90%;
+        -ms-flex-preferred-size: 90%;
+            flex-basis: 90%; } }
+
 @media only screen and (max-width: 440px) {
   .services {
     padding-top: 40px;
@@ -850,11 +876,7 @@
     -webkit-flex-basis: 90%;
         -ms-flex-preferred-size: 90%;
             flex-basis: 90%; }
-  .team-item {
-    -webkit-flex-basis: 90%;
-        -ms-flex-preferred-size: 90%;
-            flex-basis: 90%; } }
-
+}
 @media only screen and (max-width: 410px) {
   .input-wrapper {
     max-width: 260px; } }
