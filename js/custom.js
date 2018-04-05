@@ -40,4 +40,21 @@ $(document).ready(function() {
 		var targetOffset = $('section.portfolio').offset().top-105;
 		$('html,body').animate({scrollTop: targetOffset}, 1000);
 	});
+	// Form
+
+	$('.contact-form').submit(function(e) {
+		e.preventDefault();
+		$(this).find('.contact-form-item').each(function() {
+			if($(this).val() == '') {
+				$(this).addClass('empty');
+				setTimeout(() => {
+					$(this).removeClass('empty')
+				}, 2500)
+			}
+		});
+		if($(this).find('.empty').length === 0 ) {
+			$(this).children().hide();
+			$(this).append($('<div>Отправлено</div>').addClass('message'));
+		};
+	});
 });

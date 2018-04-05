@@ -160,12 +160,9 @@ ul {
 
 .header-nav-list {
   width: 100%;
+  display: none;
   position: fixed;
   top: 60px;
-  height: 0;
-  -webkit-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
   list-style-type: none;
   background-color: #fff;
   padding: 0;
@@ -181,10 +178,6 @@ ul {
     .header-nav-list a:hover {
       background-color: #e11a27;
       color: #fff; }
-
-.active-menu {
-  height: 420px; }
-
 .steps {
   padding-top: 50px;
   padding-bottom: 70px; }

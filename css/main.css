@@ -271,7 +271,7 @@ input::-webkit-input-placeholder{
   font-style: italic;
   font-weight: bold;
   color: #131D20;
-  font-size: 16px;}
+  font-size: 16px; }
 .contact-form-item:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -281,6 +281,7 @@ input::-webkit-input-placeholder{
   cursor: pointer;
   transition: all 0.3s ease;
   color: #fff;
+  padding: 15px;
 }
 .contact-button:hover,
 .contact-button:focus {
@@ -288,7 +289,16 @@ input::-webkit-input-placeholder{
   border-color: #131D20;
   color: #fff;
 }
-
+.empty {
+  border-color: red;
+}
+.message {
+  text-align: center;
+  font-size: 24px;
+  color: #55646A;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+}
 .page-footer {
   background-color: #3F4649;
   padding: 25px 0; }

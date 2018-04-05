@@ -6,8 +6,13 @@ $(document).ready(function() {
     wow.init();
 //Mobile menu
 	$('.header-menu-button').click(function() {
-		$(this).toggleClass('active'),
-		$('.header-nav-list').toggleClass('active-menu')
+		if(!$(this).hasClass('active')) {
+			$(this).addClass('active'),
+			$('.header-nav-list').slideDown()
+		} else {
+			$(this).removeClass('active'),
+			$('.header-nav-list').slideUp()
+		}
 	});
 	$('.header-nav-list a').click(function() {
 		$('.header-menu-button').toggleClass('active'),
