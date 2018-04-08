@@ -30,45 +30,63 @@
 			</div>
 		</div>
 		<div class="header-bottom-row">
-					<div class="hide-menu">
-						<span class="hide-menu-line line-top"></span>
-						<span class="hide-menu-line line-middle"></span>
-						<span class="hide-menu-line line-bottom"></span>
-					</div>
-					<a href="#" class="header-logo">
-						<img src="img/header-logo.png" alt="">
-					</a>
-					<nav class="header-nav">
-						<ul class="header-menu">
-							<li><a class="header-link" href="#">Home</a></li>
-							<li><a class="header-link" href="#">Men</a></li>
-							<li><a class="header-link" href="#">Women</a></li>
-							<li><a class="header-link" href="#">Accessories</a></li>
-							<li><a class="header-link" href="#">Lookbook</a></li>
-							<li><a class="header-link" href="#">Contact</a></li>
-						</ul>
-					</nav>
-					<div class="header-icons">
-						<a href="#" class=" link-button search"></a>
-						<a href="#" class=" link-button profile"></a>
-						<a href="#" class=" link-button favorites"></a>
-						<a href="#" class=" link-button basket"></a>
-						<span class="header-basket-value">$0.00</span>
-					</div>
+			<div class="hide-menu">
+				<span class="hide-menu-line line-top"></span>
+				<span class="hide-menu-line line-middle"></span>
+				<span class="hide-menu-line line-bottom"></span>
+			</div>
+			<a href="#" class="header-logo">
+				<img src="img/header-logo.png" alt="">
+			</a>
+			<nav class="header-nav">
+				<ul class="header-menu">
+					<li><a class="header-link" href="#">Home</a></li>
+					<li><a class="header-link" href="#">Men</a></li>
+					<li><a class="header-link" href="#">Women</a></li>
+					<li><a class="header-link" href="#">Accessories</a></li>
+					<li><a class="header-link" href="#">Lookbook</a></li>
+					<li><a class="header-link" href="#">Contact</a></li>
+				</ul>
+			</nav>
+			<div class="header-icons">
+				<form action="" class="search-wrapper">
+					<input type="text" class="search">
+					<input type="submit" class="search-submit" value="">
+				</form>
+				<a href="#" class="link-button profile"></a>
+				<a href="#" class="link-button header-favorites"></a>
+				<ul class="favorite-items"></ul>
+				<a href="#" class="link-button header-basket"></a>
+				<ul class="basket-items"></ul>
+				<span class="header-basket-value">$0.00</span>
+			</div>
 		</div>
+		
 	</header>
 
 	<div class="top-section">
-			<div class="top-section-wrapper">
-				<div class="top-section-text">
-					<p>We make it easy to exprience creativity</p>
-					<p class="large-text">Stylish <br> new <br> design</p>
-					<p class="light-text">Order online and have your products delivered to your closest store for free...</p>
-					<a href="#" class="main-btn">Shopping now <span></span></a>
-				</div>
+		<div class="top-section-wrapper">
+			<div class="top-section-text">
+				<p>We make it easy to exprience creativity</p>
+				<p class="large-text">Stylish <br> new <br> design</p>
+				<p class="light-text">Order online and have your products delivered to your closest store for free...</p>
+				<a href="#" class="main-btn">Shopping now <span></span></a>
 			</div>
+		</div>
 	</div>
-
+	<div class="login-popup">
+		<div class="popup-close-button">
+			<span></span>
+			<span></span>
+		</div>
+		<h3>Welcome</h3>
+		<form class="login-form">
+			<input type="text" class="login-name" placeholder="Username">
+			<input type="password" class="login-password" placeholder="Password">
+			<input type="submit" class="login-submit" value="Sign In">
+		</form>
+		<a href="#" class="forgot-password">Forgot your password?</a>
+	</div>
 <!-- Advantages section -->
 	<div class="advantages">
 		<div class="container">
@@ -115,7 +133,7 @@
 						<p class="banners-main-p">Shirt for boy's</p>
 						<span class="banners-price">$99.00</span>
 						<p class="banners-info">Refresh your wardrobe with a piece from our gorgeousready-to-wear collection, featuring beautifully crafted coats, dresses, jackets, sweaters, skirts, tops and trousers. Whether you’re searching for a special occasion...</p>
-						<a href="" class="main-btn">Shopping button <span></span></a>
+						<a href="" class="main-btn">Shopping now <span></span></a>
 					</div>
 				</div>
 				<div class="banners-item banners-girl">
@@ -124,7 +142,7 @@
 						<p class="banners-main-p">Shirt for girl's</p>
 						<span class="banners-price">$99.00</span>
 						<p class="banners-info">Refresh your wardrobe with a piece from our gorgeousready-to-wear collection, featuring beautifully crafted coats, dresses, jackets, sweaters, skirts, tops and trousers. Whether you’re searching for a special occasion...</p>
-						<a href="" class="main-btn">Shopping button <span></span></a>
+						<a href="" class="main-btn">Shopping now <span></span></a>
 					</div>
 				</div>
 			</div>
@@ -149,11 +167,11 @@
 			<div class="products-wrapper">
 			<div class="text-row">
 				<h2>Feature Product</h2>
-				<p>All product</p>
+				<a href="#" class="products-link">All product</a>
 			</div>
 			<div class="items-row">
 
-				<div class="product-item">
+				<div class="product-item" data-cost="40.00" data-name="bominable Hoodie">
 					<div class="product-item-img">
 						<a href="#" class="product-item-link">
 							<img src="img/feature-product/1.jpg" alt="">
@@ -181,7 +199,7 @@
 					</div>
 				</div>
 
-				<div class="product-item">
+				<div class="product-item" data-cost="29.00" data-name="HolLister Backyard Sweatshirt">
 					<div class="product-item-img">
 						<a href="#" class="product-item-link">
 							<img src="img/feature-product/2.jpg" alt="">
@@ -210,7 +228,7 @@
 					</div>
 				</div>
 
-				<div class="product-item">
+				<div class="product-item" data-cost="29.00" data-name="Oslo Trek Hoodie">
 					<div class="product-item-img">
 						<a href="#" class="product-item-link">
 							<img src="img/feature-product/3.jpg" alt="">
@@ -238,7 +256,7 @@
 					</div>
 				</div>
 
-				<div class="product-item">
+				<div class="product-item" data-cost="40.00" data-name="Mach Street Sweatshirt">
 					<div class="product-item-img">
 						<a href="#" class="product-item-link">
 							<img src="img/feature-product/4.jpg" alt="">
@@ -267,7 +285,7 @@
 					</div>
 				</div>
 
-				<div class="product-item">
+				<div class="product-item" data-cost="40.00" data-name="Backyard Sweat Shirt">
 					<div class="product-item-img">
 						<a href="#" class="product-item-link">
 							<img src="img/feature-product/5.jpg" alt="">
@@ -296,7 +314,7 @@
 					</div>
 				</div>
 
-				<div class="product-item">
+				<div class="product-item" data-cost="110.00" data-name="Faded Short Sleevers">
 					<div class="product-item-img">
 						<a href="#" class="product-item-link">
 							<img src="img/feature-product/6.jpg" alt="">
@@ -324,7 +342,7 @@
 					</div>
 				</div>
 
-				<div class="product-item">
+				<div class="product-item" data-cost="80.00" data-name="Oslo Trek Hoodie">
 					<div class="product-item-img">
 						<a href="#" class="product-item-link">
 							<img src="img/feature-product/7.jpg" alt="">
@@ -352,7 +370,7 @@
 					</div>
 				</div>
 
-				<div class="product-item">
+				<div class="product-item" data-cost="80.00" data-name="Leather Sneakers">
 					<div class="product-item-img">
 						<a href="#" class="product-item-link">
 							<img src="img/feature-product/8.jpg" alt="">
@@ -418,11 +436,11 @@
 			<div class="products-wrapper">
 				<div class="text-row">
 					<h2>Best Sellers Product</h2>
-					<p>All product</p>
+					<a href="#" class="products-link">All product</a>
 				</div>
 				<div class="items-row">
 
-					<div class="product-item best-product-item">
+					<div class="product-item best-product-item" data-cost="80.00" data-name="Leather Sneakers">
 						<div class="product-item-img">
 							<a href="#" class="product-item-link">
 								<img src="img/best-products/1.jpg" alt="">
@@ -450,7 +468,7 @@
 						</div>
 					</div>
 
-					<div class="product-item best-product-item">
+					<div class="product-item best-product-item" data-cost="29.00" data-name="Hollister Backyard Sweatshirt">
 						<div class="product-item-img">
 							<a href="#" class="product-item-link">
 								<img src="img/best-products/2.jpg" alt="">
@@ -478,7 +496,7 @@
 						</div>
 					</div>
 
-					<div class="product-item best-product-item">
+					<div class="product-item best-product-item" data-cost="29.00" data-name="Oslo Trek Hoodie">
 						<div class="product-item-img">
 							<a href="#" class="product-item-link">
 								<img src="img/best-products/3.jpg" alt="">
@@ -632,8 +650,8 @@
 		</div>
 	</footer>
 	</div>
-	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-	<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<!-- 	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
    <script src="main.js"></script>
   </body>
 </html>
