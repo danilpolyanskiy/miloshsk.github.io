@@ -218,6 +218,8 @@ h3 {
 }
 .basket-items li {
   margin: 5px 0;
+  border-bottom: 2px solid #9CDFCE;
+  padding: 5px 0;
 }
 .favorite-items{
   width: 250px;
@@ -234,6 +236,11 @@ h3 {
   opacity: 0;
   border: 3px solid #31353D;
   border-radius: 5px;
+}
+.favorite-items li {
+  margin: 5px 0;
+  border-bottom: 2px solid #9CDFCE;
+  padding: 5px 0;
 }
 .favorite-items-show {
   opacity: 1;
@@ -1337,8 +1344,7 @@ a {
   border: none;
   outline: none;
   z-index: 2;
-  cursor: pointer;
-}
+  cursor: pointer; }
 .profile {
   background-image: url(img/svg/profile.svg);
   background-size: 100%;
@@ -1354,8 +1360,10 @@ a {
   background-image: url(img/svg/favorites.svg);
   background-size: 100%;
   background-repeat: no-repeat;
-  background-position: center;
-}
+  background-position: center; }
+.header-favorites:hover {
+  width: 20px;
+  height: 20px; }
 .basket {
   background-image: url(img/svg/basket.svg);
   background-size: 100%;
@@ -1366,6 +1374,9 @@ a {
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center; }
+.header-basket:hover {
+  width: 20px;
+  height: 20px; }
 .zoom {
   background-image: url(img/svg/zoom.svg);
   background-size: 80%;

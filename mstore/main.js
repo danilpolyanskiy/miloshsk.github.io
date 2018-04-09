@@ -38,14 +38,15 @@ for(let i = 0; i < addToBasket.length; i++) {
 	})
 }
 
-basketBtn.addEventListener('click', function() {
-	basketShow.classList.toggle('basket-items-show');
+basketBtn.addEventListener('mouseover', function() {
+	basketShow.classList.add('basket-items-show');
 })
+basketBtn.addEventListener('mouseout', function() {
+	basketShow.classList.remove('basket-items-show');
+})
+
 const favoriteItems = document.querySelector('.favorite-items');
 const headerFavBtn = document.querySelector('.header-favorites');
-headerFavBtn.addEventListener('click', function() {
-	favoriteItems.classList.toggle('favorite-items-show');
-})
 
 let addToFavorite = document.querySelectorAll('.favorites');
 for(let i = 0; i < addToFavorite.length; i++) {
@@ -56,3 +57,9 @@ for(let i = 0; i < addToFavorite.length; i++) {
 		favoriteItems.appendChild(li);
 	})
 }
+headerFavBtn.addEventListener('mouseover', function(e) {
+	favoriteItems.classList.add('favorite-items-show');
+})
+headerFavBtn.addEventListener('mouseout', function() {
+	favoriteItems.classList.remove('favorite-items-show');
+})
