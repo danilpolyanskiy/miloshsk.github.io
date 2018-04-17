@@ -1,10 +1,14 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
 .toolbar {
   background-color: #333333;
+  min-height: 50px;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  padding: 0 10px;
+  padding: 15px 10px;
   z-index: 1000;
   display: -webkit-box;
   display: -webkit-flex;
@@ -14,15 +18,16 @@
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center; }
+    -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-line-pack: center;
+  -webkit-align-content: center;
+  align-content: center;; }
   .toolbar a {
     color: #999999;
+    padding: 17px;
     text-decoration: none;
     font-family: "Montserrat", sans-serif;
-    padding: 15px;
     font-size: 15px; }
     .toolbar a:not(.current-ballance):hover {
       background-color: #00c8c8;
@@ -43,9 +48,7 @@
   background-size: 100%; }
 
 .toolbar-column {
-  display: -webkit-flex;
   display: -moz-flex;
-  display: -ms-flex;
   display: -o-flex;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -53,7 +56,8 @@
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+  height: 100%; }
 
 .toolbar-register-form {
   display: -webkit-flex;
@@ -928,9 +932,7 @@ img {
   width: 100%;
   height: auto; }
 
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+
 
 @media only screen and (max-width: 940px) and (orientation: landscape) {
   .header-menu {

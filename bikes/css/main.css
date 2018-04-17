@@ -13,7 +13,7 @@
   display: flex;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-around;
-      -ms-flex-pack: justify;
+     -ms-flex-pack: distribute;
           justify-content: space-around;
   position: relative;
   width: 100%; }
@@ -69,7 +69,8 @@
       -ms-flex-align: center;
           align-items: center;
   list-style-type: none;
-  width: 50%;
+  max-width: 520px;
+  width: 100%;
   margin: 0;
   padding: 0; }
 .header-menu li {
@@ -97,6 +98,8 @@
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-align: center;
+  align-items: center;
   position: absolute;
   top: 40%;
   left: 0;
@@ -140,7 +143,7 @@
 .categories-items-wrapper {
   display: -webkit-flex;
   display: -moz-flex;
-  display: -ms-flex;
+  display: -ms-flexbox;
   display: -o-flex;
   display: flex;
   justify-content: space-between; }
@@ -170,6 +173,7 @@
   display: -ms-flex;
   display: -o-flex;
   display: flex;
+  text-align: center;
   flex-direction: column;
   justify-content: center;
 }
@@ -217,18 +221,21 @@
 .bike-item-wrapper {
   display: -webkit-flex;
   display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
+  display: -ms-flexbox;
+  display: -o-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
  }
 .bike-item-row {
   display: -webkit-flex;
   display: -moz-flex;
-  display: -ms-flex;
+  display: -ms-flexbox;
   display: -o-flex;
   display: flex;
+  -ms-flex-align: center;
   align-items: center;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 0 5%;
 }
@@ -268,17 +275,19 @@
 .contact-form {
   display: -webkit-flex;
   display: -moz-flex;
-  display: -ms-flex;
+  display: -ms-flexbox;
   display: -o-flex;
   display: flex;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 .contact-form-row {
   display: -webkit-flex;
   display: -moz-flex;
-  display: -ms-flex;
+  display: -ms-flexbox;
   display: -o-flex;
   display: flex;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 .contact-form-row .contact-form-item {
@@ -316,17 +325,21 @@
 .footer-nav {
   display: -webkit-flex;
   display: -moz-flex;
-  display: -ms-flex;
+  display: -ms-flexbox;
   display: -o-flex;
   display: flex;
-  justify-content: space-between; }
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-align: center;
+   align-items: center; }
 .footer-menu {
   display: -webkit-flex;
   display: -moz-flex;
-  display: -ms-flex;
+  display: -ms-flexbox;
   display: -o-flex;
   display: flex;
-  width: 50%;
+  max-width: 520px;
+  width: 100%;
   list-style-type: none; }
 .footer-menu li {
   flex-grow: 1; }

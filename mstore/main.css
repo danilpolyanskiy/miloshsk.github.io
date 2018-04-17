@@ -181,6 +181,7 @@ h3 {
     background-color: #31353d;
     color: #fff; }
 .link-button {
+  display: block;
   width: 15px;
   height: 15px;
   margin: 0 10px;
@@ -747,6 +748,7 @@ h2 {
   font-size: 12px;
   font-weight: 300;
   letter-spacing: 0.5px;
+  border: none;
   color: #252525;
   outline: none; }
 
@@ -878,8 +880,10 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around; }
+  -ms-flex-pack: justify;
+      justify-content: space-between; 
+  max-width: 770px;
+  width: 100%; }
 
 .footer-map {
   max-width: 400px;

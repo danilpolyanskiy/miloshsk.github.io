@@ -3,6 +3,7 @@
 .page-header {
   background-image: url(../img/header-bg.jpg);
   background-size: cover;
+  height: 100vh;
   -webkit-box-shadow: inset 0 0 0 2000px rgba(54, 64, 76, 0.7);
           box-shadow: inset 0 0 0 2000px rgba(54, 64, 76, 0.7);
   position: relative; }
@@ -484,6 +485,7 @@
           align-items: center; }
 
 .partners-item {
+  display: block;
   margin: 40px; }
 
 .price {
@@ -528,9 +530,9 @@
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding-bottom: 40px; }
 
 .price-name {
@@ -558,9 +560,7 @@
   color: #29323c; }
 
 .sign-up {
-  background-color: #29323c;
-  position: absolute;
-  bottom: 40px; }
+  background-color: #29323c; }
 
 .contact-column {
   max-width: 800px;
@@ -805,7 +805,10 @@
   .partners-item {
     margin: 20px; } }
 
-@media only screen and (max-width: 640px) and (orientation: landscape){
+@media only screen and (max-width: 850px) and (orientation: landscape){
+  .header-text {
+    padding: 0;
+  }
  .nav-list a {
   padding: 5px 80px;
  }

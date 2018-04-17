@@ -83,6 +83,8 @@ ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 0 60px;
   position: relative;
   z-index: 10; }
@@ -104,8 +106,8 @@ ul {
 
 .header-login {
   display: block;
-  height: 30px;
-  width: 30px;
+  height: 28px;
+  width: 28px;
   background-image: url(../img/svg/login.svg);
   background-size: 100%;
   position: absolute;
@@ -186,6 +188,8 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-align-items: flex-start;
+  align-items: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 -webkit-box-pack: justify;
@@ -293,16 +297,16 @@ ul {
   background-image: url(../img/advantage/advantage3.jpg);
   background-position: 50% 0; }
 
-.solitions-wrapper {
+.solutions-wrapper {
   text-align: center;
   padding-top: 40px;
   padding-bottom: 110px; }
-  .solitions-wrapper h2 {
+  .solutions-wrapper h2 {
     margin-bottom: 90px; }
-  .solitions-wrapper h3 {
+  .solutions-wrapper h3 {
     font-size: 36px; }
 
-.solitions-items-wrapper {
+.solutions-items-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -310,7 +314,7 @@ ul {
       -ms-flex-pack: justify;
           justify-content: space-between; }
 
-.solitions-item {
+.solutions-item {
   padding-top: 10px;
   margin: 0 5px;
   max-width: 310px;
@@ -319,18 +323,18 @@ ul {
   border-radius: 10px;
   position: relative; }
 
-.solitions-bottom-text {
+.solutions-bottom-text {
   font-size: 22px;
   margin: 20px 0; }
 
-.solitions-info {
+.solutions-info {
   background-color: #fff;
   margin: 0 5px;
   padding-top: 20px;
   height: 230px;
   position: relative; }
 
-.solitions-price-text {
+.solutions-price-text {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -368,24 +372,27 @@ ul {
     border-left: solid 20px #ffd200;
     border-bottom: solid 20px #ffd200; }
 
-.solitions-ul {
+.solutions-ul {
   text-align: left;
   margin-bottom: 60px; }
-  .solitions-ul li {
+  .solutions-ul li {
+    display: block;
     padding-left: 30px;
     position: relative;
-    font-size: 18px; }
-    .solitions-ul li p {
+    line-height: 18px; }
+    .solutions-ul li p {
       margin: 5px 0; }
-    .solitions-ul li:before {
+    .solutions-ul li:before {
       content: "";
-      display: block;
+      display: inline;
       width: 20px;
       height: 20px;
       background-image: url(../img/svg/checkbox.svg);
       background-size: 100%;
       position: absolute;
-      left: 0; }
+      left: 0;
+      top: 0;
+      bottom: 0; }
 
 .testimonials {
   background-image: url(../img/testimonials-bg.jpg);
@@ -582,13 +589,13 @@ ul {
     padding: 5px 5px 30px; } }
 
 @media only screen and (max-width: 730px) {
-  .solitions-wrapper h3 {
+  .solutions-wrapper h3 {
     font-size: 28px; }
-  .solitions-ul li {
+  .solutions-ul li {
     font-size: 16px; }
-  .solitions-info {
+  .solutions-info {
     height: 180px; }
-  .solitions-bottom-text {
+  .solutions-bottom-text {
     font-size: 18px; }
   .solutions-price-text {
     font-size: 50px; } }
@@ -610,7 +617,7 @@ ul {
     font-size: 16px; } }
 
 @media only screen and (max-width: 635px) {
-  .solitions-items-wrapper {
+  .solutions-items-wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -618,7 +625,7 @@ ul {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-  .solitions-item {
+  .solutions-item {
     max-width: 400px;
     margin-bottom: 50px; } }
 
@@ -664,9 +671,12 @@ ul {
     padding-bottom: 50px; }
   .advantage-item-wrapper {
     margin-bottom: 20px; }
+  .steps-wrapper {
+    justify-content: center;
+  }
   .steps-item {
     width: 100%; }
-  .solitions-wrapper h2 {
+  .solutions-wrapper h2 {
     margin-bottom: 20px; }
   .testimonials {
     padding-bottom: 40px; }
@@ -683,7 +693,7 @@ ul {
     font-size: 40px; }
   .header-top-row-wrapper {
     padding: 0 40px; }
-  .solitions-wrapper {
+  .solutions-wrapper {
     padding: 0 10px; }
   .testimonials-person .testimonials-pic {
     width: 120px;
