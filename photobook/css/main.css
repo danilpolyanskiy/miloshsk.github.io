@@ -58,6 +58,7 @@ ul {
 
 .page-header {
   position: relative;
+  height: 100vh;
   background-image: url(../img/header-bg.jpg);
   background-size: cover;
   background-position: 50% 0;
@@ -566,7 +567,7 @@ ul {
   font-weight: 600;
   text-align: center; }
 
-@media only screen and (max-width: 865px) and (orientation: landscape) {
+@media only screen and (max-device-width: 865px) and (orientation: landscape) {
   .active-menu {
     height: 100%;
   }
@@ -706,3 +707,16 @@ ul {
   .header-phone {
     font-size: 12px;
     padding: 5px 10px; } }
+@media only screen and (max-device-width : 812px) and (orientation : landscape) {
+    .header-info {
+      padding: 75px 0;
+    }
+} 
+@media only screen and (max-device-width : 640px) and (orientation : landscape) {
+    .header-info {
+      padding: 75px 0;
+    }
+    h2 {
+      font-size: 42px;
+    }
+} 

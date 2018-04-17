@@ -59,11 +59,8 @@ h2 {
 .header-text {
   text-align: center;
   text-transform: uppercase;
-  position: absolute;
-  width: 100%;
-  top: 35%;
-  left: 0;
-  right: 0;
+  margin-top: 350px;
+  padding: 0 2px;
 }
 .header-caption {
   font-size: 60px;
@@ -349,15 +346,13 @@ input::-webkit-input-placeholder{
   height: 50px;
   border-radius: 50%; }
 .footer-top .skype-icon {
-  background-image: url(../img/social.png);
+  background-image: url(../img/skype.svg);
   -webkit-background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: -7px -6px; }
+  background-size: 100%;}
 .footer-top .vk-icon {
-  background-image: url(../img/social.png);
+  background-image: url(../img/vk.svg);
   -webkit-background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: -143px -6px; }
+  background-size: 100%;}
 
 @media only screen and (max-width: 975px){
   .portfolio-item {
@@ -417,14 +412,12 @@ input::-webkit-input-placeholder{
     padding: 20px;
     text-align: center;
   }
-  .header-text {
-    top: 40%; }
   .about-item p {
     margin-bottom: 20px; }
 }
 @media only screen and (max-width: 460px) {
   .header-text {
-    top: 25%;
+    margin-top: 200px;
   }
   .header-button-area {
     bottom: 15%;

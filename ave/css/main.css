@@ -3,12 +3,11 @@
           box-sizing: border-box; }
 .toolbar {
   background-color: #333333;
-  min-height: 50px;
   position: fixed;
   top: 0;
   left: 0;
+  right: 0;
   width: 100%;
-  padding: 15px 10px;
   z-index: 1000;
   display: -webkit-box;
   display: -webkit-flex;
@@ -22,8 +21,9 @@
   -moz-box-align: center;
   -ms-flex-line-pack: center;
   -webkit-align-content: center;
-  align-content: center;; }
+  align-content: center; }
   .toolbar a {
+    display: block;
     color: #999999;
     padding: 17px;
     text-decoration: none;
@@ -56,8 +56,7 @@
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
-          justify-content: space-between;
-  height: 100%; }
+          justify-content: space-between; }
 
 .toolbar-register-form {
   display: -webkit-flex;
@@ -733,11 +732,13 @@ h1 {
   h1 {
     font-size: 150px; }
   .header-nav {
-    -webkit-box-ordinal-group: 3;
-    -webkit-order: 2;
-        -ms-flex-order: 2;
-            order: 2;
-    width: 10%; }
+    position: fixed;
+    right: 0
+    top: 0
+    bottom: 0; }
+  .header-search-container {
+    margin-right: 70px;
+  }
   .header-menu {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -934,7 +935,7 @@ img {
 
 
 
-@media only screen and (max-width: 940px) and (orientation: landscape) {
+@media only screen and (max-device-width: 940px) and (orientation: landscape) {
   .header-menu {
     justify-content: flex-start;
   }

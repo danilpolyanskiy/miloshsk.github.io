@@ -860,7 +860,7 @@ img {
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
-@media only screen and (max-width: 940px) and (orientation: landscape) {
+@media only screen and (max-device-width: 940px) and (orientation: landscape) {
   .header-menu {
     justify-content: flex-start;
   }
