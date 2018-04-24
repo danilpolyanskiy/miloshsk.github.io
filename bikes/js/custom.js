@@ -6,10 +6,10 @@ $(document).ready(function() {
 // Mobile menu
 	$('.hide-menu').click(function() {
 		$(this).toggleClass('active-menu');
-		$('.header-menu').toggleClass('header-menu-show')
+		$('.header-nav').toggleClass('header-nav-show')
 	});
 	$('.header-menu a').click(function() {
-		$('.header-menu').toggleClass('header-menu-show');
+		$('.header-nav').toggleClass('header-nav-show');
 		$('.hide-menu').toggleClass('active-menu');
 	});
 

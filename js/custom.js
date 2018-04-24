@@ -1,9 +1,4 @@
 $(document).ready(function() { 
-// Animate 
-    wow = new WOW( {
-      mobile: false
-    } )
-    wow.init();
 //Mobile menu
 	$('.hide-menu').click(function() {
 		$(this).toggleClass('active-menu'),
@@ -57,4 +52,14 @@ $(document).ready(function() {
 			$(this).append($('<div>Отправлено</div>').addClass('message'));
 		};
 	});
+	//Tabs
+	$('.tabs-btn').click(function() {
+		var tabid = $(this).attr('data-tab');
+		$('.tabs-btns-wrapper').find('.tabs-btn').removeClass('active-tab-btn');
+		$('.tabs-items-wrapper').removeClass('active-tab');
+		$(this).addClass('active-tab-btn');
+		$('#'+tabid).addClass('active-tab');
+
+	})
+
 });

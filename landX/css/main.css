@@ -6,14 +6,14 @@
   .page-header span {
     color: #0199e6; }
 
-.header-p {
+.header-text {
   font-family: "Source Sans Pro", sans-serif;
   color: #fff;
   font-size: 20px;
   text-align: center;
   padding: 0 20%; }
 
-.header-row-wrapper {
+.header-top-row {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -22,6 +22,8 @@
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-align-items: center;
+  align-items: center;
   margin-bottom: 150px; }
 
 .header-logo a {
@@ -36,6 +38,8 @@
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
+  -ms-align-items: center;
+  align-items: center;
   display: flex;
   padding: 0; }
 .header-social-links ul a {
@@ -71,7 +75,7 @@
   width: 100%;
   margin: 0 auto;
   margin-bottom: 35px; }
-.header-form input {
+.header-input {
   font-family: "Source Sans Pro", sans-serif;
   background-color: #000;
   border: 1px solid  #0199e6;
@@ -83,10 +87,13 @@
   padding: 15px 0;
   padding-left: 20px;
   margin-right: 10px;
+  outline: none;
   color: #8e8e8e; }
   .header-form input::-webkit-input-placeholder {
     color: #8e8e8e; }
-
+  .header-form input:focus {
+    border-color: #016B9F;
+  }
 .header-links {
   list-style-type: none;
   display: -webkit-box;
@@ -110,12 +117,23 @@
   padding: 15px 30px;
   -webkit-border-radius: 5px;
           border-radius: 5px; }
-.header-links .register-link {
+.header-register-link {
+  outline: none;
   background-color: #0199e6;
   border: 2px solid #0199e6; }
-.header-links .learn-link {
+.header-register-link:hover,
+.header-register-link:focus {
+  background-color: #016B9F;
+  border-color: #016B9F; }
+.header-info-link {
+  outline: none;
   border: 2px solid #fff;
   text-align: center; }
+.header-info-link:hover,
+.header-info-link:focus {
+  background-color: #016B9F;
+  border-color: #016B9F;
+}
 .submit-button {
   font-family: "Raleway", sans-serif;
   background-color: #0199e6;
@@ -129,6 +147,11 @@
   -webkit-border-radius: 5px;
           border-radius: 5px;
   cursor: pointer; }
+  .submit-button:hover,
+  .submit-button:focus{
+    background-color: #016B9F;
+    border-color: #016B9F;
+  }
 .info {
   padding: 100px 0;
   margin-bottom: 100px; }
@@ -151,7 +174,9 @@
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between; }
-
+.info-column {
+  width: 50%;
+}
 .info-column:last-child {
   margin-left: 40px; }
 
@@ -577,7 +602,7 @@ a.premium {
 @media only screen and (max-width: 580px) {
   .header-row-wrapper {
     margin-bottom: 50px; }
-  .header-p {
+  .header-text {
     padding: 0 5%; }
   .header-form {
     -webkit-box-orient: vertical;

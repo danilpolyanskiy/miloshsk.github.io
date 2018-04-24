@@ -11,6 +11,10 @@ h2 {
   margin-bottom: 40px;
   letter-spacing: 2px;
   color: #3F4649; }
+ul {
+  list-style-type: none; }
+a {
+  text-decoration: none; }
 .page-header {
   background-color: #3F4649;
   position: relative;
@@ -37,7 +41,6 @@ h2 {
   transition: 0.3s ease;
 }
 .mainmenu {
-  list-style-type: none;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
@@ -47,7 +50,6 @@ h2 {
   margin: 0;
 }
 .mainmenu-link {
-  text-decoration: none;
   font-size: 24px;
   padding: 25px;
   color: #fff;
@@ -143,7 +145,56 @@ h2 {
           transform: rotate(-45deg); }
 
 
-
+.tabs-btns-wrapper {
+  max-width: 400px;
+  width: 100%; 
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+  -ms-align-items: center;
+  align-items: center;
+  background-color: #55646A;
+  padding: 0;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  }
+.tabs-btns-wrapper li {
+  flex-grow: 1;
+}
+.tabs-btn {
+  font-size: 20px;
+  color: #fff;
+  padding: 20px;
+  width: 100%;
+  background-color: #55646A;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: block;
+}
+.tabs-btn:hover {
+  background-color: #34464E;
+}
+.tabs-items-wrapper {
+  display: none;
+  justify-content: space-around;
+  -ms-align-items: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.active-tab {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+.active-tab-btn{
+  background-color: #34464E;
+}
 .portfolio {
   margin-bottom: 40px;
   padding-top: 40px; }
@@ -161,16 +212,6 @@ h2 {
   margin: 40px 0;
   font-family: "Roboto Slab", serif;
   color: #fff; }
-.portfolio-item-wrapper{
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  -webkit-box-pack:center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around; }
 .portfolio-item {
   width: 45%;
   margin-bottom: 20px;
@@ -328,7 +369,6 @@ input::-webkit-input-placeholder{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  list-style-type: none;
   -webkit-box-pack: center;
      -ms-flex-pack: center;
           justify-content: center;

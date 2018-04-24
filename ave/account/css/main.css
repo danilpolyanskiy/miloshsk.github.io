@@ -3,8 +3,8 @@
   position: fixed;
   top: 0;
   left: 0;
+  right: 0;
   width: 100%;
-  padding: 0 10px;
   z-index: 1000;
   display: -webkit-box;
   display: -webkit-flex;
@@ -14,15 +14,17 @@
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center; }
+    -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-line-pack: center;
+  -webkit-align-content: center;
+  align-content: center; }
   .toolbar a {
+    display: block;
     color: #999999;
+    padding: 17px;
     text-decoration: none;
     font-family: "Montserrat", sans-serif;
-    padding: 15px;
     font-size: 15px; }
     .toolbar a:not(.current-ballance):hover {
       background-color: #00c8c8;
@@ -468,7 +470,6 @@
   visibility: hidden; }
   #check:checked ~ .check:before {
     display: block; }
-
 .register-button {
   max-width: 260px;
   width: 100%;
@@ -489,11 +490,15 @@
     border-color: #00c8c8; }
 
 .register-info {
+  max-width: 290px;
+  width: 100%;
   font-family: "Montserrat", sans-serif;
   font-size: 15px;
+  line-height: 19px;
   color: #454647;
   padding-left: 60px; }
   .register-info a {
+    display: block;
     color: #00c8c8; }
     .register-info a:hover {
       color: #454647; }

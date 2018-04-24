@@ -8,11 +8,11 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/animate.css">
+
 	<!-- FOnts -->
 	<link href="https://fonts.googleapis.com/css?family=Nunito%7CRoboto+Slab" rel="stylesheet">
 	<!-- Scripts -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-	<script src="js/wow.js"></script>
 	<script src="js/custom.js"></script>
 	
 </head>
@@ -50,88 +50,99 @@
 	<section class="portfolio" id="portfolio-scroll">
 
 		<div class="container">
-			<h2 class="wow slideInDown">Мои работы</h2>
+			<h2 class=" slideInDown">Мои работы</h2>
 			<div class="portfolio-item-wrapper">
-				<div class="portfolio-item wow zoomIn">
-					<a href="/bikes" class="portfolio-link">
-						<div class="overlay">
-							<p>Click me</p>
-						</div>
-						<img src="img/bikes.jpg" alt="pic" class="img-responsive">
-					</a>
+				<ul class="tabs-btns-wrapper">
+					<li><button data-tab="tab-html" class="tabs-btn active-tab-btn">Примеры верстки</button></li>
+					<li><button data-tab="tab-js" class="tabs-btn">Примеры JS</button></li>
+
+				</ul>
+				<div id="tab-html" class="tabs-items-wrapper active-tab">
+					<div class="portfolio-item  ">
+						<a href="/bikes" class="portfolio-link">
+							<div class="overlay">
+								<p>Click me</p>
+							</div>
+							<img src="img/bikes.jpg" alt="pic" class="img-responsive">
+						</a>
+					</div>
+					<div class="portfolio-item  ">
+						<a href="/quotes" class="portfolio-link">
+							<div class="overlay">
+								<p>Click me</p>
+							</div>
+							<img src="img/quotes.jpg" alt="pic" class="img-responsive">
+						</a>
+					</div>
+					<div class="portfolio-item  ">
+						<a href="/landX" class="portfolio-link">
+							<div class="overlay">
+								<p>Click me</p>
+							</div>
+							<img src="img/landX.jpg" alt="pic" class="img-responsive">
+						</a>
+					</div>
+					<div class="portfolio-item  ">
+						<a href="/ave" class="portfolio-link">
+							<div class="overlay">
+								<p>Click me</p>
+							</div>
+							<img src="img/ave.jpg" alt="pic" class="img-responsive">
+						</a>
+					</div>
+					<div class="portfolio-item  ">
+						<a href="/photobook" class="portfolio-link">
+							<div class="overlay">
+								<p>Click me</p>
+							</div>
+							<img src="img/photobook.jpg" alt="pic" class="img-responsive">
+						</a>
+					</div>
+					<div class="portfolio-item  ">
+						<a href="/resto" class="portfolio-link">
+							<div class="overlay">
+								<p>Click me</p>
+							</div>
+							<img src="img/resto.jpg" alt="pic" class="img-responsive">
+						</a>
+					</div>
+					<div class="portfolio-item  ">
+						<a href="/zet" class="portfolio-link">
+							<div class="overlay">
+								<p>Click me</p>
+							</div>
+							<img src="img/zet.jpg" alt="pic" class="img-responsive">
+						</a>
+					</div>
+					<div class="portfolio-item  ">
+						<a href="/mstore" class="portfolio-link">
+							<div class="overlay">
+								<p>Click me</p>
+							</div>
+							<img src="img/mstore.jpg" alt="pic" class="img-responsive">
+						</a>
+					</div>
 				</div>
-				<div class="portfolio-item wow zoomIn">
-					<a href="/quotes" class="portfolio-link">
-						<div class="overlay">
-							<p>Click me</p>
-						</div>
-						<img src="img/quotes.jpg" alt="pic" class="img-responsive">
-					</a>
+				
+				<div id="tab-js" class="tabs-items-wrapper">
+					<div class="portfolio-item  ">
+						<a href="../simpleapp" class="portfolio-link">
+							<div class="overlay">
+								<p>Click me</p>
+							</div>
+							<img src="img/simpleapp.jpg" alt="pic" class="img-responsive">
+						</a>
+					</div>
+					<div class="portfolio-item  ">
+						<a href="../clock" class="portfolio-link">
+							<div class="overlay">
+								<p>Click me</p>
+							</div>
+							<img src="img/clock.jpg" alt="pic" class="img-responsive">
+						</a>
+					</div>
 				</div>
-				<div class="portfolio-item wow zoomIn">
-					<a href="/landX" class="portfolio-link">
-						<div class="overlay">
-							<p>Click me</p>
-						</div>
-						<img src="img/landX.jpg" alt="pic" class="img-responsive">
-					</a>
-				</div>
-				<div class="portfolio-item wow zoomIn">
-					<a href="/ave" class="portfolio-link">
-						<div class="overlay">
-							<p>Click me</p>
-						</div>
-						<img src="img/ave.jpg" alt="pic" class="img-responsive">
-					</a>
-				</div>
-				<div class="portfolio-item wow zoomIn">
-					<a href="/photobook" class="portfolio-link">
-						<div class="overlay">
-							<p>Click me</p>
-						</div>
-						<img src="img/photobook.jpg" alt="pic" class="img-responsive">
-					</a>
-				</div>
-				<div class="portfolio-item wow zoomIn">
-					<a href="/resto" class="portfolio-link">
-						<div class="overlay">
-							<p>Click me</p>
-						</div>
-						<img src="img/resto.jpg" alt="pic" class="img-responsive">
-					</a>
-				</div>
-				<div class="portfolio-item wow zoomIn">
-					<a href="/zet" class="portfolio-link">
-						<div class="overlay">
-							<p>Click me</p>
-						</div>
-						<img src="img/zet.jpg" alt="pic" class="img-responsive">
-					</a>
-				</div>
-				<div class="portfolio-item wow zoomIn">
-					<a href="/mstore" class="portfolio-link">
-						<div class="overlay">
-							<p>Click me</p>
-						</div>
-						<img src="img/mstore.jpg" alt="pic" class="img-responsive">
-					</a>
-				</div>
-				<div class="portfolio-item wow zoomIn">
-					<a href="../simpleapp" class="portfolio-link">
-						<div class="overlay">
-							<p>Click me</p>
-						</div>
-						<img src="img/simpleapp.jpg" alt="pic" class="img-responsive">
-					</a>
-				</div>
-				<div class="portfolio-item wow zoomIn">
-					<a href="../clock" class="portfolio-link">
-						<div class="overlay">
-							<p>Click me</p>
-						</div>
-						<img src="img/clock.jpg" alt="pic" class="img-responsive">
-					</a>
-				</div>
+				
 				
 			</div>
 		</div>
@@ -142,16 +153,16 @@
 
 	<section class="about" >	
 		<div class="container">
-			<h2 class="about-caption wow slideInDown" id="about-scroll">Инфо</h2>
+			<h2 class="about-caption  slideInDown" id="about-scroll">Инфо</h2>
 			<div class="about-items-wrapper">
-				<div class="about-item wow fadeInUp">
+				<div class="about-item  fadeInUp">
 					<p>
 					Кроссбраузерность - сайт выглядит одинаково во всех последних версиях браузеров.</p>
 				</div>
-				<div class="about-item wow fadeInUp">
+				<div class="about-item  fadeInUp">
 					<p>Валидная верстка в соответствии с макетом.</p>
 				</div>
-				<div class="about-item wow fadeInUp">
+				<div class="about-item  fadeInUp">
 					<p>Адаптивность - сайт корректно отображается на различных устройствах и  разрешениях.</p>
 				</div>
 			</div>
