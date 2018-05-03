@@ -38,29 +38,29 @@
   display: flex;
   cursor: pointer;
   z-index: 10; }
-  .header-menu-button-wrapper span {
-    font-family: "Montserrat";
-    color: #fff;
-    font-size: 14px;
-    text-transform: uppercase; }
+.header-menu-button-wrapper span {
+  font-family: "Montserrat";
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase; }
 
 .header-menu-button {
   position: relative;
   padding-right: 40px; }
-  .header-menu-button .header-menu-line {
-    width: 30px;
-    height: 2px;
-    background-color: #fff;
-    position: absolute;
-    right: 0;
-    -webkit-transition: 0.5s ease;
-    transition: 0.5s ease; }
-  .header-menu-button .bt-t {
-    top: 0; }
-  .header-menu-button .bt-m {
-    top: 7px; }
-  .header-menu-button .bt-b {
-    top: 14px; }
+.header-menu-button .header-menu-line {
+  width: 30px;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  right: 0;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease; }
+.header-menu-button .bt-t {
+  top: 0; }
+.header-menu-button .bt-m {
+  top: 7px; }
+.header-menu-button .bt-b {
+  top: 14px; }
 
 .header-menu-button-active .bt-t {
   top: 7px;
@@ -86,40 +86,46 @@
   width: 100%;
   margin: 0 auto;
   padding: 175px 0; }
-  .header-text h1 {
-    font-family: "Montserrat";
-    font-weight: bold;
-    font-size: 36px;
-    color: #fff;
-    margin-bottom: 30px; }
-  .header-text p {
-    font-family: "Open Sans";
-    font-size: 17px;
-    color: #fff;
-    margin-bottom: 45px; }
+.header-text h1 {
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 36px;
+  color: #fff;
+  margin-bottom: 30px; }
+.header-text p {
+  font-family: "Open Sans";
+  font-size: 17px;
+  color: #fff;
+  margin-bottom: 45px; }
 
 .header-button-area {
   position: absolute;
   left: 50%;
   margin-left: -25px;
   bottom: 5%;
+  transition: 0.3s ease;
   border: 1px solid #fff;
   -webkit-border-radius: 50%;
           border-radius: 50%;
   height: 50px;
   width: 50px;
   text-align: center;
-  cursor: pointer;
-  opacity: 0.7; }
-  .header-button-area span {
-    border: 1px solid #fff;
-    border-width: 0 2px 2px 0;
-    display: inline-block;
-    margin-top: 15px;
-    padding: 7px;
-    -webkit-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-            transform: rotate(45deg); }
+  cursor: pointer; }
+.header-button-area:hover {
+  background-color: #fff;
+}
+.header-button-area:hover span{
+  border-color: #29323c;
+}
+.header-button-area span {
+  border: 1px solid #fff;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  margin-top: 15px;
+  padding: 7px;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg); }
 
 .page-nav {
   position: absolute;
@@ -448,6 +454,10 @@
   -webkit-border-radius: 50%;
           border-radius: 50%; }
 
+.social:hover {
+  opacity: 0.6;
+}
+
 .social-twitter {
   background-image: url(../img/social/twitter.svg);
   background-size: 100%; }
@@ -487,7 +497,9 @@
 .partners-item {
   display: block;
   margin: 40px; }
-
+.partners-item:hover {
+  opacity: 0.6;
+}
 .price {
   text-align: center;
   padding-top: 80px;
@@ -558,9 +570,6 @@
   font-family: "Open Sans";
   font-size: 14px;
   color: #29323c; }
-
-.sign-up {
-  background-color: #29323c; }
 
 .contact-column {
   max-width: 800px;
@@ -634,6 +643,7 @@
 .contact-input {
   background: transparent;
   border: 1px solid #fff;
+  outline: none;
   padding: 13px;
   width: 100%;
   -webkit-box-sizing: border-box;
@@ -641,10 +651,14 @@
   font-family: "Montserrat";
   font-size: 14px;
   color: #fff; }
-
+.contact-input:hover,
+.contact-input:focus {
+  border: 1px solid #B9B9BA;
+}
 .contact-area {
   background: transparent;
   border: 1px solid #fff;
+  outline: none;
   width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -653,7 +667,10 @@
   font-size: 14px;
   color: #fff;
   padding: 13px; }
-
+.contact-area:hover,
+.contact-area:focus {
+  border: 1px solid #B9B9BA;
+}
 .contact-submit-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -671,11 +688,16 @@
   color: #fff;
   background: transparent;
   border: 1px solid #fff;
+  outline: none;
   max-width: 120px;
   width: 100%;
   padding: 15px 0;
   cursor: pointer; }
-
+.contact-submit:hover,
+.contact-submit:focus {
+  background-color: #fff;
+  color: #29323c;
+}
 .contact-map {
   max-width: 800px;
   width: 100%;
@@ -741,7 +763,9 @@
   margin: 0 5px;
   -webkit-border-radius: 50%;
           border-radius: 50%; }
-
+.footer-link:hover{
+  opacity: 0.8;
+}
 .footer-tw {
   background-image: url(../img/social/twitter.svg);
   background-size: 100%; }
@@ -936,7 +960,15 @@ ul {
   font-size: 13px;
   text-transform: uppercase;
   color: #fff;
+  transition: 0.3s ease;
   border: 1px solid #fff;
   padding: 12px 25px;
   -webkit-border-radius: 25px;
           border-radius: 25px; }
+.link-button:hover {
+  background-color: #fff;
+  color: #29323c;
+}
+.sign-up {
+  background-color: #29323c;
+  border: 1px solid #29323c; }
