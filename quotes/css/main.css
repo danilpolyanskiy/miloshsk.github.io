@@ -830,7 +830,7 @@ a.button {
     background-color: #000;
     color: #fff; }
 
-@media (max-width: 813px), screen and (orientation landscape) {
+@media (max-width: 825px), screen and (orientation landscape) {
   .header-top-wrapper-scroll {
     background-color: inherit;
   }
@@ -855,7 +855,6 @@ a.button {
 @media only screen and (max-width: 600px) {
   h2 {
     font-size: 40px; } }
-
 @media only screen and (max-width: 386px) {
   a.button {
     margin-bottom: 50px; }

@@ -467,6 +467,11 @@ h1 {
     font-size: 50px;
   }
 }
+@media only screen and (max-width: 570px) and (orientation: landscape)  {
+ .header-menu a {
+ 	padding: 20px 0;
+ }
+}
 h2 {
   font-size: 28px;
   letter-spacing: 3px;
