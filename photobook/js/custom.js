@@ -16,7 +16,7 @@ $(document).ready(function() {
 	});
 	$('.header-nav-list a').click(function() {
 		$('.header-menu-button').toggleClass('active'),
-		$('.header-nav-list').toggleClass('active-menu')
+		$('.header-nav-list').slideUp()
 	})
 //Scroll
 	window.onscroll = function() {scrollFunction()};
