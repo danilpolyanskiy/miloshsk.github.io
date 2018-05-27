@@ -96,12 +96,12 @@ ul {
 
 .page-header .slick-prev {
   left: 5px;
-  background-image: url(../img/arrow-prev.svg);
+  background-image: url(img/arrow-prev.svg);
   background-size: cover; }
 
 .page-header .slick-next {
   right: 25px;
-  background-image: url(../img/arrow-next.svg);
+  background-image: url(img/arrow-next.svg);
   background-size: cover; }
 
 .page-header .slick-dots {
@@ -834,7 +834,7 @@ a[data-show="hidden"] {
 .posts .slick-prev {
   right: 50%;
   margin-right: 5px;
-  background-image: url(../img/arrow-prev.svg);
+  background-image: url(img/arrow-prev.svg);
   background-size: 60%;
   background-repeat: no-repeat;
   background-position: 50% 50%; }
@@ -842,7 +842,7 @@ a[data-show="hidden"] {
 .posts .slick-next {
   left: 50%;
   margin-left: 5px;
-  background-image: url(../img/arrow-next.svg);
+  background-image: url(img/arrow-next.svg);
   background-size: 60%;
   background-repeat: no-repeat;
   background-position: 50% 50%; }
