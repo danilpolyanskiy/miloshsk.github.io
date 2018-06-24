@@ -37,21 +37,27 @@ $(document).ready(function() {
 	});
 	// Form
 
-	$('.contact-form').submit(function(e) {
-		e.preventDefault();
-		$(this).find('.contact-form-item').each(function() {
-			if($(this).val() == '') {
-				$(this).addClass('empty');
-				setTimeout(() => {
-					$(this).removeClass('empty')
-				}, 2500)
-			}
-		});
-		if($(this).find('.empty').length === 0 ) {
-			$(this).children().hide();
-			$(this).append($('<div>Отправлено</div>').addClass('message'));
-		};
-	});
+	$(".contact-form").submit(function(e) {
+	    e.preventDefault();
+	    $(this)
+	      .find(".contact-form-item")
+	      .each(function() {
+	        var _this = this;
+
+	        if ($(this).val() == "") {
+	          $(this).addClass("empty");
+	          setTimeout(function() {
+	            $(_this).removeClass("empty");
+	          }, 2500);
+	        }
+	      });
+	    if ($(this).find(".empty").length === 0) {
+	      $(this)
+	        .children()
+	        .hide();
+      $(this).append($("<div>Отправлено</div>").addClass("message"));
+    }
+  });
 	//Tabs
 	$('.tabs-btn').click(function() {
 		var tabid = $(this).attr('data-tab');

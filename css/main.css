@@ -147,22 +147,29 @@ a {
 
 .tabs-btns-wrapper {
   max-width: 400px;
-  width: 100%; 
-  display: -webkit-flex;
+  width: 100%;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-align-items: center;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #55646A;
   padding: 0;
   margin: 0 auto;
   margin-bottom: 20px;
   }
 .tabs-btns-wrapper li {
-  flex-grow: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 .tabs-btn {
   font-size: 20px;
@@ -181,16 +188,21 @@ a {
 }
 .tabs-items-wrapper {
   display: none;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -ms-align-items: center;
-  align-items: center;
-  flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .active-tab {
-  display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .active-tab-btn{
@@ -374,7 +386,9 @@ input::-webkit-input-placeholder{
      -ms-flex-pack: center;
           justify-content: center;
   -ms-align-items: center;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 0; }
 .footer-links li {
   display: -webkit-box;
@@ -388,11 +402,9 @@ input::-webkit-input-placeholder{
   border-radius: 50%; }
 .footer-top .skype-icon {
   background-image: url(../img/skype.svg);
-  -webkit-background-size: 100%;
   background-size: 100%;}
 .footer-top .vk-icon {
   background-image: url(../img/vk.svg);
-  -webkit-background-size: 100%;
   background-size: 100%;}
 
 @media only screen and (max-width: 975px){
