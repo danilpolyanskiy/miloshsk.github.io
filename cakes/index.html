@@ -4,7 +4,7 @@
       <title>Торты на заказ</title>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
 			
 			<link rel="stylesheet" href="slick/slick.css"/>
 			<link rel="stylesheet" href="slick/slick-theme.css"/>
@@ -16,10 +16,13 @@
    <body>
 
     <header class="page-header">
-       <div class="header-line">
-          <div class="container">
-             <div class="header-line-wrapper">
+       <div class="header-line container">
               <a href="#" class="page-nav-menu-logo">Cakes</a>
+                <div class="burger">
+                  <div class="burger-line burger-line-top"></div>
+                  <div class="burger-line burger-line-mid"></div>
+                  <div class="burger-line burger-line-bot"></div>
+                </div>
                 <nav class="page-nav header-nav">
                    <ul class="page-nav-menu">
                       <li><a href="#" class="page-nav-menu-link">Наши торты</a></li>
@@ -31,113 +34,117 @@
                    </ul>
                 </nav>
                 <a href="#" class="header-phone">+7 906 899 9296</a>
-             </div>
-          </div>
        </div>
-       <div class="container">
-          <div class="header-info">
-            <h1>Торты на заказ</h1>
-             <p>Ручная работа</p>
-             <a href="#" class="btn-main">Выбрать торт</a>
+       <div class="header-content container">
+          <div class="header-title">
+            <h1 class="header-title-caption">Торты на заказ</h1>
+             <p class="header-title-subtext">Ручная работа</p>
           </div>
+           <a href="#" class="btn-main">Выбрать торт</a>
            <div class="header-features-wrapper">
-             <div class="header-features">
-               <svg class="icon header-feature-icon">
+             <div class="header-features-item">
+               <svg class="icon header-features-icon">
                 <use xlink:href="img/svg/symbol//sprite.svg#header-icon1" />
                </svg>
-                <p>Натуральные ингредиенты</p>
+                <p class="header-features-text">Натуральные ингредиенты</p>
              </div>
-             <div class="header-features">
-               <svg class="icon header-feature-icon">
+             <div class="header-features-item">
+               <svg class="icon header-features-icon">
                   <use xlink:href="img/svg/symbol//sprite.svg#header-icon2" />
                </svg>
-                <p>Доставка бесплатно при заказе от 2000 рублей</p>
+                <p class="header-features-text">Доставка бесплатно при заказе от 2000 рублей</p>
              </div>
           </div>
        </div>
     </header>
-
-    <section class="products">
-       <div class="container">
-          <div class="products-wrapper">
-             <h2>Наши торты</h2>
-             <div class="products-item-line">
-                <div class="product-item product-item-large">
-                   <a href="#" class="product-item-wrapper-link">
-                      <div class="product-item-description">
-                         <h3>Классические</h3>
-                         <span>24 вида</span>
-                      </div>
-                      <div class="product-item-text">
-                        Смотреть
-                        <svg class="icon link-arrow">
+    <section class="products container">
+             <h2 class="section-caption">Наши торты</h2>
+              <div class="products-items-wrapper">
+                
+                  <div class="product-item-column">
+                  <a href="#" class="product-item product-item-large">
+                  <div class="product-item-description">
+                     <h3>Классические</h3>
+                     <span>24 вида</span>
+                  </div>
+                  <div class="product-item-text">
+                    Смотреть
+                    <svg class="icon link-arrow">
+                    <use xlink:href="img/svg/symbol/sprite.svg#right-arrow" />
+                  </div>
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="img/products/classic.jpg">
+                    <img src="img/products/classic-mobile.jpg" alt="">
+                  </picture>
+               </a>
+               </div>
+                   <div class="product-item-column">
+                  <a href="#" class="product-item product-item-small">
+                     <div class="product-item-description">
+                        <h3>Муссовые</h3>
+                        <span>12 видов</span>
+                     </div>
+                     <div class="product-item-text">
+                       <svg class="icon link-arrow">
+                       <use xlink:href="img/svg/symbol/sprite.svg#right-arrow" />
+                    </div>
+                    <picture>
+                      <source media="(min-width: 768px)" srcset="img/products/mous.jpg">
+                        <img src="img/products/mous-mobile.jpg">
+                    </picture>
+                  </a>
+                  <a href="#" class="product-item product-item-small">
+                     <div class="product-item-description">
+                        <h3>Свадебные</h3>
+                        <span>20 видов</span>
+                     </div>
+                     <div class="product-item-text">
+                       <svg class="icon link-arrow">
+                          <use xlink:href="img/svg/symbol/sprite.svg#right-arrow" />
+                       </svg>
+                    </div>
+                    <picture>
+                       <source media="(min-width: 768px)" srcset="img/products/wedding.jpg">
+                        <img src="img/products/wedding-mobile.jpg" alt="">
+                    </picture>
+                  </a>
+             </div>
+               
+                
+                <div class="product-item-column">
+                    <a href="#" class="product-item product-item-small">
+                       <div class="product-item-text">
+                         <svg class="icon link-arrow">
                         <use xlink:href="img/svg/symbol/sprite.svg#right-arrow" />
                       </div>
-                      <img src="img/products/classic.jpg" alt="">
-                   </a>
-                </div>
-                <div class="product-item-column">
-                   <div class="product-item product-item-small">
-                      <a href="#" class="product-item-wrapper-link">
-                         <div class="product-item-description">
-                            <h3>Муссовые</h3>
-                            <span>12 видов</span>
-                         </div>
-                         <div class="product-item-text">
-                           <svg class="icon link-arrow">
+                       <div class="product-item-description">
+                          <h3>Мужчинам</h3>
+                          <span>12 видов</span>
+                       </div>
+                       <picture>
+                          <source media="(min-width: 768px)" srcset="img/products/men.jpg">
+                          <img src="img/products/men-mobile.jpg" alt="">
+                       </picture>
+                    </a>
+                    <a href="#" class="product-item product-item-small">
+                       <div class="product-item-description">
+                          <h3>Женщинам</h3>
+                          <span>16 видов</span>
+                       </div>
+                        <div class="product-item-text">
+                         <svg class="icon link-arrow">
                            <use xlink:href="img/svg/symbol/sprite.svg#right-arrow" />
-                        </div>
-                         <img src="img/products/mous.jpg" alt="">
-                      </a>
-                   </div>
-                   <div class="product-item product-item-small">
-                      <a href="#" class="product-item-wrapper-link">
-                         <div class="product-item-description">
-                            <h3>Свадебные</h3>
-                            <span>20 видов</span>
-                         </div>
-                         <div class="product-item-text">
-                           <svg class="icon link-arrow">
-                              <use xlink:href="img/svg/symbol/sprite.svg#right-arrow" />
-                           </svg>
-                        </div>
-                         <img src="img/products/wedding.jpg" alt="">
-                      </a>
-                   </div>
-                </div>
-             </div>
-             <div class="products-item-line">
-                <div class="product-item-column">
-                   <div class="product-item product-item-small">
-                      <a href="#" class="product-item-wrapper-link">
-                         <div class="product-item-text">
-                           <svg class="icon link-arrow">
-                          <use xlink:href="img/svg/symbol/sprite.svg#right-arrow" />
-                        </div>
-                         <div class="product-item-description">
-                            <h3>Мужчинам</h3>
-                            <span>12 видов</span>
-                         </div>
-                         <img src="img/products/men.jpg" alt="">
-                      </a>
-                   </div>
-                   <div class="product-item product-item-small">
-                      <a href="#" class="product-item-wrapper-link">
-                         <div class="product-item-description">
-                            <h3>Женщинам</h3>
-                            <span>16 видов</span>
-                         </div>
-                          <div class="product-item-text">
-                           <svg class="icon link-arrow">
-                             <use xlink:href="img/svg/symbol/sprite.svg#right-arrow" />
-                           </svg>
-                        </div>
-                         <img src="img/products/women.jpg" alt="">
-                      </a>
-                   </div>
-                </div>
-                <div class="product-item product-item-large">
-                   <a href="#" class="product-item-wrapper-link">
+                         </svg>
+                      </div>
+                      <picture>
+                        <source media="(min-width: 768px)" srcset="img/products/women.jpg">
+                         <img src="img/products/women-mobile.jpg" alt="">
+                      </picture>
+                       
+                    </a>
+                 </div>
+                 <div class="product-item-column">
+                   <a href="#" class="product-item product-item-large">
                       <div class="product-item-description">
                          <h3>Детские</h3>
                          <span>18 видов</span>
@@ -146,43 +153,51 @@
                         <svg class="icon link-arrow">
                        <use xlink:href="img/svg/symbol/sprite.svg#right-arrow" />
                      </div>
-                      <img src="img/products/kids.jpg" alt="">
+                     <picture>
+                       <source media="(min-width: 768px)" srcset="img/products/kids.jpg">
+                        <img src="img/products/kids-mobile.jpg" alt="">
+                     </picture>
+                      
                    </a>
-                </div>
-             </div>
-          </div>
-       </div>
+                   </div>
+              </div>
     </section>
 
-    <section class="order">
-    	<div class="container">
-    		<div class="order-wrapper">
-    			<h2>Индивидуальный заказ</h2>
-    			<p class="caption-info">Соберите торт в 3 шага</p>
+    <section class="order container">
+          <div class="order-caption">
+            <h2 class="section-caption">Индивидуальный заказ</h2>
+            <p class="section-subtext">Соберите торт в 3 шага</p>
+          </div>
     			<div class="filling-wrapper">
     				<div class="order-description">
 							<p>01</p>
 							<p>Выберите начинку</p>
 						</div> 
-    				<div class="filling">
+    				<div class="filling-slider">
     				<div class="filling-item">
     					<div class="filling-img-wrapper">
-    						<img src="img/slider/item1.jpg" alt="">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/slider/item1.jpg">
+                  <img src="img/slider/item1-mobile.jpg" alt="">
+                </picture>
     					</div>
     					<div class="filling-info-wrapper">
     						<h4>Шоколадный ганаш</h4>
-	    					<p>Ароматный шоколадный бисквит, густой шоколадный крем – самый шоколадный из всех возможных десертов!</p>
+	    					<p class="filling-description">Ароматный шоколадный бисквит, густой шоколадный крем – самый шоколадный из всех возможных десертов!</p>
 	    					<p class="filling-price">1000 руб/кг</p>
 	    					<button class="btn-main btn-slider">Выбрать</button>
     					</div>
     				</div>
     				<div class="filling-item">
     					<div class="filling-img-wrapper">
-    						<img src="img/slider/item1.jpg" alt="">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/slider/item1.jpg">
+                  <img src="img/slider/item1-mobile.jpg" alt="">
+                </picture>
     					</div>
     					<div class="filling-info-wrapper">
     						<h4>Шоколадный ганаш</h4>
-	    					<p>Ароматный шоколадный бисквит, густой шоколадный крем – самый шоколадный из всех возможных десертов!</p>
+	    					<p class="filling-description">Ароматный шоколадный бисквит, густой шоколадный крем – самый шоколадный из всех возможных десертов!</p>
 	    					<p class="filling-price">1000 руб/кг</p>
 	    					<button class="btn-main btn-slider">Выбрать</button>
     					</div>
@@ -191,13 +206,14 @@
 
     			</div>
     			</div>
-    
+        </div>
+        
     		<div class="size">
     			<div class="order-description">
 					<p>02</p>
 					<p>Размер</p>
 				</div> 
-						<div class="size-wrapper">
+						<div class="size-slider">
 							<div class="size-item">
 								<div class="size-item-pic">
 									<label for="small" class="size-item-circle-label"></label>
@@ -215,6 +231,7 @@
 									<p>17-18 см</p>
 									<p>(1 - 6 персон)</p>
 								</div>
+                <button class="btn-main btn-slider">Выбрать</button>
 							</div>
 							<div class="size-item">
 								<div class="size-item-pic">
@@ -233,6 +250,7 @@
 									<p>23-24 см</p>
 									<p>(10 - 12 персон)</p>
 								</div>
+                <button class="btn-main btn-slider">Выбрать</button>
 							</div>
 							<div class="size-item">
 								<div class="size-item-pic">
@@ -251,6 +269,7 @@
 									<p>Два яруса 15 и 20 см</p>
 									<p>(15 - 20 персон)</p>
 								</div>
+                <button class="btn-main btn-slider">Выбрать</button>
 							</div>
 							<div class="size-item">
 								<div class="size-item-pic">
@@ -269,10 +288,12 @@
 									<p>Три яруса 30, 20 и 18 см</p>
 									<p>(25 - 30 персон)</p>
 								</div>
+                <button class="btn-main btn-slider">Выбрать</button>
 							</div>
 						</div>
     		</div>
-   
+
+
          <div class="decor">
             <div class="order-description">
                <p>03</p>
@@ -280,53 +301,64 @@
             </div> 
             <div class="decor-slider">
                <div class="decor-slider-item">
-                  <label for="decor1" class="decor-label"></label>
-                  <input type="radio" name="decor" id="decor1" class="decor-input">
-                  <div class="decor-item-wrapper">
-                     <div class="decor-img-wrapper">
-                         <img src="img/decor/decor1.jpg" alt="">
-                     </div>
-                     <p class="decor-item-caption">Ягодное ассорти</p>
-                     <p class="decor-item-price">700 руб/кг</p>
-                  </div>
+                   <div class="decor-img-wrapper">
+                      <picture>
+                         <source media="(min-width: 768px)" srcset="img/decor/decor1-tablet.jpg">
+                           <img src="img/decor/decor1-mobile.jpg" alt="">
+                      </picture>
+                   </div>
+                   <div class="decor-slider-text">
+                      <p class="decor-item-caption">Ягодное ассорти</p>
+                   <p class="decor-item-price">700 руб/кг</p>
+                   </div>
+                   <button class="btn-main btn-slider">Выбрать</button>
                </div>
                <div class="decor-slider-item">
-                  <label for="decor2" class="decor-label"></label>
-                  <input type="radio" name="decor" id="decor2" class="decor-input">
-                  <div class="decor-item-wrapper">
-                    <div class="decor-img-wrapper">
-                         <img src="img/decor/decor2.jpg" alt="">
-                     </div>
-                     <p class="decor-item-caption">Маршмеллоу</p>
-                     <p class="decor-item-price">600 руб/кг</p>
-                  </div>
+                  <div class="decor-img-wrapper">
+                      <picture>
+                         <source media="(min-width: 768px)" srcset="img/decor/decor2-tablet.jpg">
+                            <img src="img/decor/decor2-mobile.jpg" alt="">
+                      </picture>
+                   </div>
+                   <div class="decor-slider-text">
+                      <p class="decor-item-caption">Маршмеллоу</p>
+                   <p class="decor-item-price">600 руб/кг</p>
+                   </div>
+                  
+                   <button class="btn-main btn-slider">Выбрать</button>
                </div>
                 <div class="decor-slider-item">
-                  <label for="decor1" class="decor-label"></label>
-                  <input type="radio" name="decor" id="decor1" class="decor-input">
-                  <div class="decor-item-wrapper">
-                     <div class="decor-img-wrapper">
-                         <img src="img/decor/decor1.jpg" alt="">
-                     </div>
+                   <div class="decor-img-wrapper">
+                      <picture>
+                         <source media="(min-width: 768px)" srcset="img/decor/decor1-tablet.jpg">
+                           <img src="img/decor/decor1-mobile.jpg" alt="">
+                      </picture>
+                   </div>
+                   <div class="decor-slider-text">
                      <p class="decor-item-caption">Ягодное ассорти</p>
-                     <p class="decor-item-price">700 руб/кг</p>
-                  </div>
+                   <p class="decor-item-price">700 руб/кг</p>
+                   </div>
+                   
+                   <button class="btn-main btn-slider">Выбрать</button>
                </div>
                <div class="decor-slider-item">
-                  <label for="decor2" class="decor-label"></label>
-                  <input type="radio" name="decor" id="decor2" class="decor-input">
-                  <div class="decor-item-wrapper">
-                    <div class="decor-img-wrapper">
-                         <img src="img/decor/decor2.jpg" alt="">
-                     </div>
-                     <p class="decor-item-caption">Маршмеллоу</p>
-                     <p class="decor-item-price">600 руб/кг</p>
-                  </div>
+                  <div class="decor-img-wrapper">
+                      <picture>
+                         <source media="(min-width: 768px)" srcset="img/decor/decor2-tablet.jpg">
+                          <img src="img/decor/decor2-mobile.jpg" alt="">
+                      </picture>
+                   </div>
+                   <div class="decor-slider-text">
+                      <p class="decor-item-caption">Маршмеллоу</p>
+                   <p class="decor-item-price">600 руб/кг</p>
+                   </div>
+                  
+                   <button class="btn-main btn-slider">Выбрать</button>
                </div>
             </div>
             <div class="order-form-wrapper">
-               <h2>Ваш выбор</h2>
-               <div class="order-form">
+               <h2 class="order-form-caption">Ваш выбор</h2>
+               <form class="order-form">
                 <div class="order-form-items-wrapper">
                    <div class="order-form-item">
                      <label for="order-form-filling">Начинка</label>
@@ -340,18 +372,17 @@
                      <label for="order-form-decor">Оформление</label>
                      <input type="text" id="order-form-decor" class="order-form-input">
                   </div>
-                </div>
+                  </div>
                   <button class="btn-main btn-order-form">Заказать торт</button>
-               </div>
+               </form>
             </div>
          </div>
-    		</div>
-    	</div>
-    </section>
-    <section class="reviews">
-       <div class="container">
-          <div class="reviews-wrapper">
-             <h2>Отзывы</h2>
+
+    </section> 
+
+    
+    <section class="reviews container">
+             <h2 class="section-caption">Отзывы</h2>
              <div class="reviews-slider">
                 <div class="reviews-slider-item">
                   <img src="img/reviews/reviews1.jpg" alt="" class="reviews-img">
@@ -370,24 +401,15 @@
                   </div>
                 </div>
              </div>
-          </div>
-       </div>
     </section>
-    <section class="about">
-       <div class="container">
-          <div class="about-wrapper">
-            <div class="about-info">
-                <h2>О нас</h2>
-                <div class="about-item">
-                   <h3>О кондитере</h3>
-                   <p class="about-caption">Кондитер - как призвание</p>
-                   <p class="about-text">Павел — профессиональный повар в различных гастрономических областях, но однажды его сердце покорило кондитерское искусство. С ранних лет он увлекался утонченным мастерством и обратился к своим талантам как кондитер. </p>
-                </div>
-                <div class="about-item">
-                  <p class="about-caption">Принцип – натуральные ингредиенты</p>
-                  <p class="about-text">Сегодня Павел радует изделиями не только близких, но и тех, кто предпочитает качественную продукцию для торжества, а главным принципом является выбор натуральных ингредиентов. </p>
-                </div>
-                <ul class="about-item-social">
+
+    <section class="about container">
+                <h2 class="section-caption">О нас</h2>
+                <div class="about-wrapper">
+              <div class="about-img-wrapper">
+              <img src="img/about/about.jpg" alt="" class="about-img">
+            </div>
+             <ul class="about-item-social">
                   <li><a href="#" class="about-social-item-link social-link-red">
                     <svg class="about-social-icon">
                       <use xlink:href="img/svg/symbol//sprite.svg#instagram"/>
@@ -404,60 +426,66 @@
                     </svg>
                   </a></li>
                 </ul>
-            </div>
-            <div class="about-img">
-              <img src="img/about/about.jpg" alt="" class="about-img">
-            </div>
+                
+              <div class="about-info">
+                <div class="about-item">
+                     <h3 class="section-subtext">О кондитере</h3>
+                     <p class="about-caption">Кондитер - как призвание</p>
+                     <p class="about-text">Павел — профессиональный повар в различных гастрономических областях, но однажды его сердце покорило кондитерское искусство. <br> С ранних лет он увлекался утонченным мастерством и обратился к своим талантам как кондитер. </p>
+                  </div>
+                  <div class="about-item">
+                    <p class="about-caption">Принцип – натуральные ингредиенты</p>
+                    <p class="about-text">Сегодня Павел радует изделиями не только близких, но и тех, кто предпочитает качественную продукцию для торжества, а главным принципом является выбор натуральных ингредиентов. </p>
+                  </div>
+              </div>
+             
+          
           </div>
-       </div>
     </section>
-    <div class="quote">
+    
+    <div class="quote container">
       <div class="quote-item">
         <svg class="quote-icon">
           <use xlink:href="img/svg/symbol//sprite.svg#quotes"/>
         </svg>
-        <p>Я за простые рецепты. В Италии это называют cucina povera: когда обычные ингредиенты превращаются в божественное блюдо.</p>
+        <p class="quote-item-text">Я за простые рецепты. В Италии это называют cucina povera: когда обычные ингредиенты превращаются в божественное блюдо.</p>
         <div class="quote-cite">
            <img src="img/cite.png" alt="">
         </div>
       </div>
     </div>
+
     <section class="advantages">
-      <div class="container">
-        <div class="advantages-wrapper">
-          <div class="advantages-top-text">
-            <h2>Наши преимущества</h2>
-            <p class="advantages-subtext">Почему нас выбирают?</p>
+          <div class="advantages-top-text container">
+            <h2 class="section-caption">Наши преимущества</h2>
+            <p class="section-subtext">Почему нас выбирают?</p>
           </div>
           <div class="advantages-item">
             <div class="advantages-subitem">
                <svg class="advantages-icon">
                 <use xlink:href="img/svg/symbol//sprite.svg#header-icon1"/>
               </svg>
-               <h4>Без искусственных добавок</h4>
-                <p>Работаем  с натуральными ингредиентами и свежими продуктами</p>
+               <h4 class="advantages-item-caption">Без искусственных добавок</h4>
+                <p class="advantages-item-text">Работаем  с натуральными ингредиентами и свежими продуктами</p>
             </div>
             <div class="advantages-subitem">
                <svg class="advantages-icon">
                 <use xlink:href="img/svg/symbol//sprite.svg#cake"/>
               </svg>
-              <h4>Свежий торт в день рожения</h4>
-              <p>Торты изготавливаются в течение суток до отправки</p>
+              <h4 class="advantages-item-caption">Свежий торт в день торжества</h4>
+              <p class="advantages-item-text">Торты изготавливаются в течение суток до отправки</p>
             </div>
           </div>
-          <div class="advantages-item-clients">
-            <h2>Забота о клиентах</h2>
-            <p class="advantages-subtext">Для нас важно</p>
+          <div class="advantages-item-clients container">
+            <h2 class="section-caption">Забота о клиентах</h2>
+            <p class="section-subtext">Для нас важно</p>
             <p class="advantages-item-clients-text">Нам важно чтобы каждый торт был безупречным, как внутри, так и снаружи, чтобы он был создан исключительно для вас и для вашего события.</p>
           </div>
-        </div>
-      </div>
     </section>
+
     <section class="delivery">
-      <div class="container">
-        <div class="delivery-wrapper">
           <div class="delivery-item">
-            <h2>Как заказать</h2>
+            <h2 class="section-caption">Как заказать</h2>
             <ol class="delivery-list">
               <li class="delivery-list-item">
                 <p class="delivery-list-caption">Срок заказа</p>
@@ -473,16 +501,12 @@
               </li>
             </ol>
           </div>
-        </div>
-      </div>
     </section>
-    <section class="contacts">
-      <div class="container">
-        <div class="contacts-wrapper">
-          <h2 class="contacts-caption">Контакты</h2>
-          <p class="contacts-subtext">Остались вопросы?</p>
-          <div class="contacts-content">
-            <div class="contacts-form-wrapper">
+    
+    <section class="contacts container">
+          <h2 class="section-caption"">Контакты</h2>
+          <p class="section-subtext">Остались вопросы?</p>
+          <div class="contacts-form-wrapper">
             <p class="contacts-form-text">Заполните форму ниже и наш кондитер свяжется с Вами</p>
             <form class="contacts-form">
               <div class="contacts-form-item">
@@ -492,7 +516,7 @@
                  <input type="text" class="contacts-form-input" placeholder="Email адрес">
               </div>
               <div class="contacts-form-item">
-                 <input type="text" class="contacts-form-input" placeholder="Ваш вопрос">
+                <textarea class="contacts-form-message" cols="30" rows="5" placeholder="Ваш вопрос"></textarea>
               </div>
               <button class="btn-main btn-contacts" type="submit">Отправить</button>
             </form>
@@ -519,16 +543,12 @@
               </li>
             </ul>
           </div>
-          </div>
-        </div>
-      </div>
     </section>
     <footer class="page-footer">
-      <div class="container">
         <div class="footer-top">
-          <a href="#" class="page-nav-menu-logo">Cakes</a>
+          <a href="#" class="page-nav-menu-logo footer-logo">Cakes</a>
           <nav class="page-nav footer-nav">
-             <ul class="page-nav-menu">
+             <ul class="page-nav-menu footer-nav">
                 <li><a href="#" class="page-nav-menu-link">Наши торты</a></li>
                 <li><a href="#" class="page-nav-menu-link">Индивидуальный заказ</a></li>
                 <li><a href="#" class="page-nav-menu-link">Отзывы</a></li>
@@ -536,7 +556,9 @@
                 <li><a href="#" class="page-nav-menu-link">Как заказать</a></li>
                 <li><a href="#" class="page-nav-menu-link">Контакты</a></li>
              </ul>
+             <a href="#" class="footer-phone">+7 906 899 9296</a>
           </nav>
+
           <ul class="footer-social">
             <li><a href="#" class="footer-social-link social-link-black">
                <svg class="icon-footer">
@@ -553,7 +575,6 @@
         <div class="footer-bottom">
           <p class="footer-copy">&#9400; 2018 Cakes</p>
         </div>
-      </div>
     </footer>
       <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 			<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
