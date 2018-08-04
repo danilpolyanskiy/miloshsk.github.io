@@ -10,7 +10,7 @@ $(document).ready(function () {
     dots: false,
     responsive: [
       {
-        breakpoint: 678,
+        breakpoint: 768,
         settings: {
           arrows: false,
           dots: true
@@ -27,7 +27,7 @@ $(document).ready(function () {
         settings: "unslick"
       },
       {
-        breakpoint: 678,
+        breakpoint: 768,
         settings: {
           arrows: false,
           dots: true,
@@ -48,7 +48,7 @@ $(document).ready(function () {
     dots: false,
     responsive: [
       {
-        breakpoint: 678,
+        breakpoint: 768,
         settings: {
           slidesToShow: 1,
           arrows: false,
@@ -68,7 +68,7 @@ $(document).ready(function () {
     cssEase: 'ease-out',
      responsive: [
       {
-        breakpoint: 678,
+        breakpoint: 768,
         settings: {
           slidesToShow: 1,
           arrows: false,
