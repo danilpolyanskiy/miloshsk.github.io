@@ -57,6 +57,7 @@
           </div>
        </div>
     </header>
+   
     <section class="products container">
              <h2 class="section-caption">Наши торты</h2>
               <div class="products-items">
@@ -166,7 +167,7 @@
                    </div>
               </div>
     </section>
-
+   
     <section class="order container">
           <div class="order-caption">
             <h2 class="section-caption">Индивидуальный заказ</h2>
@@ -182,8 +183,8 @@
     				<div class="filling-item">
     					<div class="filling-img-wrapper">
                 <picture>
-                  <source media="(min-width: 768px)" srcset="img/slider/item1.jpg">
-                  <img src="img/slider/item1-mobile.jpg" alt="">
+                  <source media="(max-width: 768px)" srcset="img/slider/item1-mobile.jpg">
+                  <img src="img/slider/item1.jpg" alt="">
                 </picture>
     					</div>
     					<div class="filling-item-text">
@@ -196,8 +197,8 @@
     				<div class="filling-item">
     					<div class="filling-img-wrapper">
                 <picture>
-                  <source media="(min-width: 768px)" srcset="img/slider/item1.jpg">
-                  <img src="img/slider/item1-mobile.jpg" alt="">
+                  <source media="(max-width: 768px)" srcset="img/slider/item1-mobile.jpg">
+                  <img src="img/slider/item1.jpg" alt="">
                 </picture>
     					</div>
     					<div class="filling-item-text">
@@ -513,7 +514,7 @@
             </ol>
           </div>
     </section>
-    
+   
     <section class="contacts container">
           <h2 class="section-caption">Контакты</h2>
           <p class="section-subtext">Остались вопросы?</p>
@@ -589,6 +590,9 @@
           </ul>
           <p class="footer-copy">&#9400; 2018 Cakes</p>
     </footer>
+
+      <script src="js/svgforeverybody.min.js"></script>
+      <script>svg4everybody()</script>
       <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 			<script src="slick/slick.min.js"></script>
       <script src="js/main.js"></script>
