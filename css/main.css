@@ -58,13 +58,13 @@ a {
 .mainmenu-link:hover {
   background-color: #34464E;
 }
-.header-text {
+.header-caption {
+  position: absolute;
+  top: 45%;
+  right: 0;
+  left: 0;
   text-align: center;
   text-transform: uppercase;
-  margin-top: 350px;
-  padding: 0 2px;
-}
-.header-caption {
   font-size: 60px;
   font-family: "Nunito", sans-serif;
   color: #fff;
@@ -470,9 +470,6 @@ input::-webkit-input-placeholder{
     margin-bottom: 20px; }
 }
 @media only screen and (max-width: 460px) {
-  .header-text {
-    margin-top: 200px;
-  }
   .header-button-area {
     bottom: 15%;
   }
