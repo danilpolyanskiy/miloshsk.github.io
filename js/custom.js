@@ -1,42 +1,34 @@
 $(document).ready(function() { 
 //Mobile menu
-	$('.hide-menu').click(function() {
-		$(this).toggleClass('active-menu'),
-		$('.menubar').toggleClass('menubar-mobile')
+	$('.header-burger').click(function() {
+		$(this).toggleClass('header-burger-active'),
+		$('.header-menu__list').toggleClass('header-menu__list-mobile')
 	});
 
-	$('.mainmenu-link').click(function() {
-		$('.menubar').toggleClass('menubar-mobile'),
-		$('.hide-menu').toggleClass('active-menu')
+	$('.header-menu__link').click(function() {
+		$('.header-menu__list').toggleClass('header-menu__list-mobile'),
+		$('.header-burger').toggleClass('header-burger-active')
 	});
 	//Scrolling		   
-	$('ul.mainmenu a').click(function() {
+	$('.header-menu__link').click(function() {
 		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
 			var $target = $(this.hash);
 			$target = $target.length && $target || $('[id=' + this.hash.slice(1) +']');
 			if ($target.length) {
-				$('ul.mainmenu li').removeClass('active');
-				$(this).parent('li').addClass('active');
+				$('.header-menu__link').removeClass('active');
+				$(this).parent('.header-menu__link').addClass('active');
 				var targetOffset = $target.offset().top-100;
 				$('html,body').animate({scrollTop: targetOffset}, 1000);
 				return false;
 			}
 		}
 	});
-	//Scroll top
-	 $('#home').click(function () {
-        $('body,html').animate({
-           scrollTop: 0
-        }, 800);
-        return false;
-       });
 	//ScrollLink
-	$('.header-button-area').click(function() {
+	$('.header-scroll-button').click(function() {
 		var targetOffset = $('section.portfolio').offset().top-105;
 		$('html,body').animate({scrollTop: targetOffset}, 1000);
 	});
 	// Form
-
 	$(".contact-form").submit(function(e) {
 	    e.preventDefault();
 	    $(this)
@@ -45,27 +37,31 @@ $(document).ready(function() {
 	        var _this = this;
 
 	        if ($(this).val() == "") {
-	          $(this).addClass("empty");
+	          $(this).addClass("contact-form__item-error");
 	          setTimeout(function() {
-	            $(_this).removeClass("empty");
+	            $(_this).removeClass("contact-form__item-error");
 	          }, 2500);
 	        }
 	      });
-	    if ($(this).find(".empty").length === 0) {
+	    if ($(this).find(".contact-form__item-error").length === 0) {
 	      $(this)
 	        .children()
 	        .hide();
-      $(this).append($("<div>Отправлено</div>").addClass("message"));
+      $(this).append($("<p>Отправлено</p>").addClass("success-message"));
     }
   });
 	//Tabs
-	$('.tabs-btn').click(function() {
+	$('.portfolio-tabs__item').click(function() {
 		var tabid = $(this).attr('data-tab');
-		$('.tabs-btns-wrapper').find('.tabs-btn').removeClass('active-tab-btn');
-		$('.tabs-items-wrapper').removeClass('active-tab');
-		$(this).addClass('active-tab-btn');
-		$('#'+tabid).addClass('active-tab');
+		$('.portfolio-tabs').find('.portfolio-tabs__item').removeClass('portfolio-tabs__item-active');
+		$('.portfolio-list').removeClass('portfolio-list__active');
+		$(this).addClass('portfolio-tabs__item-active');
+		$('#'+tabid).addClass('portfolio-list__active');
 
 	})
-
+	//Portfolio overlay
+	$('.overlay-button').click(function() {
+		$(this).toggleClass('overlay-button-active');
+		$(this).siblings('.overlay').toggleClass('overlay-active');
+	})
 });

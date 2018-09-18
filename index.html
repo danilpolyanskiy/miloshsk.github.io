@@ -13,153 +13,170 @@
 <body>
 <!-- Page header -->
 	<header class="page-header">
-	<nav class="menubar">
-		<a href="#" id="home">
-			<img src="img/responsive.svg" width="30" height="30"  alt="Logo"></a>
-		<ul class="mainmenu">
+	<nav class="header-menu">
+		<ul class="header-menu__list">
 			<li>
-				<a href="#portfolio-scroll" class="mainmenu-link">Портфолио</a>
+				<a href="#portfolio-scroll" class="header-menu__link">Портфолио</a>
 			</li>
 			<li>
-				<a href="#about-scroll" class="mainmenu-link">Инфо</a>
+				<a href="#about-scroll" class="header-menu__link">Инфо</a>
 			</li>
 			<li>
-				<a href="#contact-scroll" class="mainmenu-link">Контакты</a>
+				<a href="#contact-scroll" class="header-menu__link">Контакты</a>
 			</li>
 		</ul>
 	</nav>
-	<div class="hide-menu">
-		<span class="hide-line hide-line-top"></span>
-		<span class="hide-line hide-line-middle"></span>
-		<span class="hide-line hide-line-bottom"></span>
+	<div class="header-burger">
+		<span class="header-burger__line header-burger__line-top"></span>
+		<span class="header-burger__line header-burger__line-middle"></span>
+		<span class="header-burger__line header-burger__line-bottom"></span>
 	</div>
 		<h1 class="header-caption">Just a portfolio site</h1>
-		<div class="header-button-area">
-			<span></span>
+		<div class="header-scroll-button">
+			<span class="header-scroll-button__arrow"></span>
 		</div>
 	</header>
 <!-- Portfolio -->
-	<section class="portfolio" id="portfolio-scroll">
+	<section class="portfolio container" id="portfolio-scroll">
 
-		<div class="container">
-			<h2>Мои работы</h2>
-			<div class="portfolio-item-wrapper">
-				<ul class="tabs-btns-wrapper">
-					<li><button data-tab="tab-html" class="tabs-btn active-tab-btn">Примеры верстки</button></li>
-					<li><button data-tab="tab-js" class="tabs-btn">Примеры JS</button></li>
-
-				</ul>
-				<div id="tab-html" class="tabs-items-wrapper active-tab">
-					<div class="portfolio-item  ">
-						<a href="/cakes" class="portfolio-link" target="_blank">
-							<div class="overlay">
-								<p>Click me</p>
-							</div>
-							<img src="img/cakes.jpg" alt="pic" class="img-responsive">
-						</a>
-					</div>
-					<div class="portfolio-item  ">
-						<a href="/waxom" class="portfolio-link" target="_blank">
-							<div class="overlay">
-								<p>Click me</p>
-							</div>
-							<img src="img/waxom.jpg" alt="pic" class="img-responsive">
-						</a>
-					</div>
-					<div class="portfolio-item  ">
-						<a href="/zet" class="portfolio-link" target="_blank">
-							<div class="overlay">
-								<p>Click me</p>
-							</div>
-							<img src="img/zet.jpg" alt="pic" class="img-responsive">
-						</a>
-					</div>
-					<div class="portfolio-item  ">
-						<a href="/mstore" class="portfolio-link" target="_blank">
-							<div class="overlay">
-								<p>Click me</p>
-							</div>
-							<img src="img/mstore.jpg" alt="pic" class="img-responsive">
-						</a>
-					</div>
-					<div class="portfolio-item  ">
-						<a href="/quotes" class="portfolio-link" target="_blank">
-							<div class="overlay">
-								<p>Click me</p>
-							</div>
-							<img src="img/quotes.jpg" alt="pic" class="img-responsive">
-						</a>
-					</div>
-					<div class="portfolio-item  ">
-						<a href="/resto" class="portfolio-link" target="_blank">
-							<div class="overlay">
-								<p>Click me</p>
-							</div>
-							<img src="img/resto.jpg" alt="pic" class="img-responsive">
-						</a>
-					</div>
-					<div class="portfolio-item  ">
-						<a href="/ave" class="portfolio-link" target="_blank">
-							<div class="overlay">
-								<p>Click me</p>
-							</div>
-							<img src="img/ave.jpg" alt="pic" class="img-responsive">
-						</a>
-					</div>
-					<div class="portfolio-item  ">
-						<a href="/bikes" class="portfolio-link" target="_blank">
-							<div class="overlay">
-								<p>Click me</p>
-							</div>
-							<img src="img/bikes.jpg" alt="pic" class="img-responsive">
-						</a>
-					</div>
-					<div class="portfolio-item  ">
-						<a href="/photobook" class="portfolio-link" target="_blank">
-							<div class="overlay">
-								<p>Click me</p>
-							</div>
-							<img src="img/photobook.jpg" alt="pic" class="img-responsive">
-						</a>
+		<h2>Мои работы</h2>
+		<ul class="portfolio-tabs portfolio-tabs__list">
+			<li><button data-tab="portfolio-list__html" class="portfolio-tabs__item portfolio-tabs__item-active">Примеры верстки</button></li>
+			<li><button data-tab="portfolio-list__js" class="portfolio-tabs__item">Примеры JS</button></li>
+		</ul>
+		<div id="portfolio-list__html" class="portfolio-list portfolio-list__active">
+			<div class="portfolio-list__item ">
+				<img src="img/cakes.jpg" alt="pic" class="portfolio-list__image">
+				<div class="overlay">
+					<div class="overlay__info">
+						<p class="overlay__info-text">Info</p>
+						<a class="overlay__info-link" href="/cakes">Go to site</a>
 					</div>
 				</div>
-				
-				<div id="tab-js" class="tabs-items-wrapper">
-					<div class="portfolio-item  ">
-						<a href="../simpleapp" class="portfolio-link" target="_blank">
-							<div class="overlay">
-								<p>Click me</p>
-							</div>
-							<img src="img/simpleapp.jpg" alt="pic" class="img-responsive">
-						</a>
-					</div>
-					<div class="portfolio-item  ">
-						<a href="../clock" class="portfolio-link" target="_blank">
-							<div class="overlay">
-								<p>Click me</p>
-							</div>
-							<img src="img/clock.jpg" alt="pic" class="img-responsive">
-						</a>
-					</div>
-					<div class="portfolio-item  ">
-						<a href="../monstergame" class="portfolio-link" target="_blank">
-							<div class="overlay">
-								<p>Click me</p>
-							</div>
-							<img src="img/monstergame.jpg" alt="pic" class="img-responsive">
-						</a>
-					</div>
-					<div class="portfolio-item  ">
-						<a href="../moviefinder" class="portfolio-link" target="_blank">
-							<div class="overlay">
-								<p>Click me</p>
-							</div>
-							<img src="img/moviefinder.jpg" alt="pic" class="img-responsive">
-						</a>
+				<button class="overlay-button">+</button>
+			</div>
+			<div class="portfolio-list__item ">
+				<img src="img/waxom.jpg" alt="pic" class="portfolio-list__image">
+				<div class="overlay">
+					<div class="overlay__info">
+						<p class="overlay__info-text">Info</p>
+						<a class="overlay__info-link" href="/waxom">Go to site</a>
 					</div>
 				</div>
-				
-				
+				<button class="overlay-button">+</button>
+			</div>
+			<div class="portfolio-list__item ">
+				<img src="img/zet.jpg" alt="pic" class="portfolio-list__image">
+				<div class="overlay">
+					<div class="overlay__info">
+						<p class="overlay__info-text">Info</p>
+						<a class="overlay__info-link" href="/zet">Go to site</a>
+					</div>
+				</div>
+				<button class="overlay-button">+</button>
+			</div>
+			<div class="portfolio-list__item ">
+				<img src="img/mstore.jpg" alt="pic" class="portfolio-list__image">
+				<div class="overlay">
+					<div class="overlay__info">
+						<p class="overlay__info-text">Info</p>
+						<a class="overlay__info-link" href="/mstore">Go to site</a>
+					</div>
+				</div>
+				<button class="overlay-button">+</button>
+			</div>
+			<div class="portfolio-list__item ">
+				<img src="img/quotes.jpg" alt="pic" class="portfolio-list__image">
+				<div class="overlay">
+					<div class="overlay__info">
+						<p class="overlay__info-text">Info</p>
+						<a class="overlay__info-link" href="/quotes">Go to site</a>
+					</div>
+				</div>
+				<button class="overlay-button">+</button>
+			</div>
+			<div class="portfolio-list__item ">
+				<img src="img/resto.jpg" alt="pic" class="portfolio-list__image">
+				<div class="overlay">
+					<div class="overlay__info">
+						<p class="overlay__info-text">Info</p>
+						<a class="overlay__info-link" href="/resto">Go to site</a>
+					</div>
+				</div>
+				<button class="overlay-button">+</button>
+			</div>
+			<div class="portfolio-list__item ">
+				<img src="img/ave.jpg" alt="pic" class="portfolio-list__image">
+				<div class="overlay">
+					<div class="overlay__info">
+						<p class="overlay__info-text">Info</p>
+						<a class="overlay__info-link" href="/ave">Go to site</a>
+					</div>
+				</div>
+				<button class="overlay-button">+</button>
+			</div>
+			<div class="portfolio-list__item ">
+				<img src="img/bikes.jpg" alt="pic" class="portfolio-list__image">
+				<div class="overlay">
+					<div class="overlay__info">
+						<p class="overlay__info-text">Info</p>
+						<a class="overlay__info-link" href="/bikes">Go to site</a>
+					</div>
+				</div>
+				<button class="overlay-button">+</button>
+			</div>
+			<div class="portfolio-list__item ">
+				<img src="img/photobook.jpg" alt="pic" class="portfolio-list__image">
+				<div class="overlay">
+					<div class="overlay__info">
+						<p class="overlay__info-text">Info</p>
+						<a class="overlay__info-link" href="/photobook">Go to site</a>
+					</div>
+				</div>
+				<button class="overlay-button">+</button>
+			</div>
+		</div>
+		
+		<div id="portfolio-list__js" class="portfolio-list">
+			<div class="portfolio-list__item ">
+				<img src="img/simpleapp.jpg" alt="pic" class="portfolio-list__image">
+				<div class="overlay">
+					<div class="overlay__info">
+						<p class="overlay__info-text">Info</p>
+						<a class="overlay__info-link" href="../simpleapp">Go to site</a>
+					</div>
+				</div>
+				<button class="overlay-button">+</button>
+			</div>
+			<div class="portfolio-list__item ">
+				<img src="img/clock.jpg" alt="pic" class="portfolio-list__image">
+				<div class="overlay">
+					<div class="overlay__info">
+						<p class="overlay__info-text">Info</p>
+						<a class="overlay__info-link" href="../clock">Go to site</a>
+					</div>
+				</div>
+				<button class="overlay-button">+</button>
+			</div>
+			<div class="portfolio-list__item ">
+				<img src="img/monstergame.jpg" alt="pic" class="portfolio-list__image">
+				<div class="overlay">
+					<div class="overlay__info">
+						<p class="overlay__info-text">Info</p>
+						<a class="overlay__info-link" href="../monstergame">Go to site</a>
+					</div>
+				</div>
+				<button class="overlay-button">+</button>
+			</div>
+			<div class="portfolio-list__item ">
+				<img src="img/moviefinder.jpg" alt="pic" class="portfolio-list__image">
+				<div class="overlay">
+					<div class="overlay__info">
+						<p class="overlay__info-text">Info</p>
+						<a class="overlay__info-link" href="../moviefinder">Go to site</a>
+					</div>
+				</div>
+				<button class="overlay-button">+</button>
 			</div>
 		</div>
 
@@ -170,16 +187,16 @@
 	<section class="about" >	
 		<div class="container">
 			<h2 class= "about-caption" id="about-scroll">Инфо</h2>
-			<div class="about-items-wrapper">
-				<div class="about-item  fadeInUp">
-					<p>
+			<div class="about-items">
+				<div class="about-item">
+					<p class="about-item__text">
 					Кроссбраузерность - сайт выглядит одинаково во всех последних версиях браузеров.</p>
 				</div>
-				<div class="about-item  fadeInUp">
-					<p>Валидная верстка в соответствии с макетом.</p>
+				<div class="about-item">
+					<p class="about-item__text">Валидная верстка в соответствии с макетом.</p>
 				</div>
-				<div class="about-item  fadeInUp">
-					<p>Адаптивность - сайт корректно отображается на различных устройствах и  разрешениях.</p>
+				<div class="about-item">
+					<p class="about-item__text">Адаптивность - сайт корректно отображается на различных устройствах и  разрешениях.</p>
 				</div>
 			</div>
 		</div>
@@ -187,31 +204,32 @@
 
 <!-- Contacts -->
 
-	<section class="contact">
-		<div class="container">
-			<h2 id="contact-scroll">Связаться со мной</h2>
-			<form action="url" name="send-message" class="contact-form">
-				<input type="text" name="name" class="contact-form-item" placeholder="Имя">
-				<input type="email" name="email" class="contact-form-item" placeholder="E-mail">
-				<textarea name="message" id="message" rows="5" class="contact-form-item" placeholder="Сообщение"></textarea>
-				<input type="submit" class="contact-button disabled" value="Отправить"> 
-			</form>
-		</div>
-
+	<section class="contact container">
+		<h2 id="contact-scroll">Связаться со мной</h2>
+		<form action="url" name="send-message" class="contact-form">
+			<input type="text" name="name" class="contact-form__item" placeholder="Имя">
+			<input type="email" name="email" class="contact-form__item" placeholder="E-mail">
+			<textarea name="message" id="message" rows="5" class="contact-form__item" placeholder="Сообщение"></textarea>
+			<input type="submit" class="contact-form__button disabled" value="Отправить"> 
+		</form>
 	</section>
 
 <!-- Footer -->
 
 	<footer class="page-footer">
 		<div class="container">	
-			<div class="footer-top">
+			<div class="footer-row">
 				<p>Быстрая связь</p>
-				<ul class="footer-links">
-					<li><a class="skype-icon" href="javascript:void(0);"></a></li>
-					<li><a class="vk-icon" href="javascript:void(0);"></a></li>
+				<ul class="social-list">
+					<li><a class="social-list__link social-list__link-skype" href="javascript:void(0);">
+						<img src="img/skype.svg" alt="skype-icon" class="social-list__icon">
+					</a></li>
+					<li><a class="social-list__link social-list__link-vk" href="javascript:void(0);">
+						<img src="img/vk.svg" alt="vk-icon" class="social-list__icon">
+					</a></li>
 				</ul>
 			</div>
-			<div class="footer-bottom">
+			<div class="footer-row">
 				<p>Copyright © 2017 | Викторов Александр</p>
 			</div>
 		</div>
