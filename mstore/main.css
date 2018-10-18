@@ -291,6 +291,9 @@ h3 {
 
 .hide-menu {
   display: none;
+  background-color: inherit;
+  border: none;
+  padding: 0;
   width: 35px;
   height: 35px;
   position: absolute;

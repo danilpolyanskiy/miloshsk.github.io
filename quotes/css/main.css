@@ -90,9 +90,12 @@
   font-size: 64px;
   font-weight: bold; }
 .page-header .hide-menu {
+  background-color: inherit;
+  border: none;
+  padding: 0;
   position: fixed;
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   cursor: pointer;
   right: 15%;
   top: 50px;
@@ -706,7 +709,6 @@
   .page-header .hide-menu {
     right: 10%;}
   .page-header .hide-menu .hide-line {
-    width: 60%;
     height: 3px; }
   .page-header .hide-menu .hide-line-top{
     top: 8px  }

@@ -18,6 +18,9 @@
   position: relative;
   width: 100%; }
 .hide-menu {
+  background-color: inherit;
+  border: none;
+  padding: 0;
   display: none;
   position: absolute;
   width: 40px;

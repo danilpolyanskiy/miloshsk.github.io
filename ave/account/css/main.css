@@ -1,3 +1,4 @@
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
@@ -287,6 +288,9 @@
     font-size: 30px; }
 
 .hide-menu {
+  background-color: inherit;
+  border: none;
+  padding: 0;
   display: none;
   position: absolute;
   width: 40px;

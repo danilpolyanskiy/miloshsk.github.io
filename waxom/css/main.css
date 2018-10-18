@@ -19,7 +19,7 @@ p.section-text{font-family:"Montserrat", sans-serif;font-weight:300;font-size:16
 .main-item-description{background-color:#fbfaf8;padding:30px 0;padding-left:25px;position:relative;z-index:4;-webkit-transition:0.4s ease;-o-transition:0.4s ease;transition:0.4s ease;}
 .main-item-description h3{font-family:"Raleway", sans-serif;font-size:20px;font-weight:400;color:#c7b299;margin:0;}
 .main-item-description p{font-family:"Montserrat", sans-serif;font-size:14px;line-height:20px;color:#d1d1d1;margin:0;}
-.burger{width:30px;height:35px;position:absolute;top:10px;right:15px;display:none;cursor:pointer;z-index:12;}
+.burger{width:30px;height:30px;background-color:inherit;padding:0;border:none;position:absolute;top:10px;right:15px;display:none;cursor:pointer;z-index:12;}
 .burger-opened{-webkit-transition:0.4s ease-in-out;-o-transition:0.4s ease-in-out;transition:0.4s ease-in-out;-webkit-transition-delay:0.6s;-o-transition-delay:0.6s;transition-delay:0.6s;-webkit-transform:rotate(45deg);-ms-transform:rotate(45deg);transform:rotate(45deg);}
 .burger-opened .line-top{-webkit-transition-delay:0.3s;-o-transition-delay:0.3s;transition-delay:0.3s;-webkit-transform:translateY(11px);-ms-transform:translateY(11px);transform:translateY(11px);}
 .burger-opened .line-mid{width:0;}

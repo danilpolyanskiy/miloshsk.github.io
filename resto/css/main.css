@@ -122,6 +122,9 @@
 .hide-menu {
   width: 30px;
   height: 30px;
+  background-color: inherit;
+  border: none;
+  padding: 0;
   position: absolute;
   right: 5%;
   top: 15px;
@@ -130,6 +133,7 @@
 
 .hide-menu-line {
   height: 2px;
+  left: 0;
   width: 100%;
   position: absolute;
   background-color: #000; 

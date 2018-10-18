@@ -124,6 +124,9 @@ ul {
   margin-bottom: 100px; }
 
 .header-menu-button {
+  background-color: inherit;
+  border: none;
+  padding: 0;
   position: absolute;
   top: 0;
   left: 0;

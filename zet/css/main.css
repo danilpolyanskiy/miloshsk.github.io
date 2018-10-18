@@ -47,6 +47,10 @@
 
 .header-menu-button {
   position: relative;
+  padding: 0;
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
   padding-right: 40px; }
 .header-menu-button .header-menu-line {
   width: 30px;
@@ -102,6 +106,7 @@
 .header-button-area {
   position: absolute;
   left: 50%;
+  background-color: inherit;
   margin-left: -25px;
   bottom: 5%;
   transition: 0.3s ease;
@@ -122,7 +127,7 @@
   border: 1px solid #fff;
   border-width: 0 2px 2px 0;
   display: inline-block;
-  margin-top: 15px;
+  margin-top: 5px;
   padding: 7px;
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);

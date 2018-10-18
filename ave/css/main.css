@@ -272,6 +272,9 @@ h1 {
 .hide-menu {
   display: none;
   position: absolute;
+  background-color: inherit;
+  border: none;
+  padding: 0;
   width: 40px;
   height: 40px;
   cursor: pointer;
