@@ -889,6 +889,9 @@
             flex-basis: 90%; } }
 
 @media only screen and (max-width: 440px) {
+  .page-header{
+    height: calc(100vh - 55px);
+  }
   .services {
     padding-top: 40px;
     padding-bottom: 40px; }
