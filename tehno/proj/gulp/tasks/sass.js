@@ -6,9 +6,7 @@ module.exports = function() {
 			includePaths: require('node-normalize-scss').includePaths
 		}).on('error', $.sass.logError))
 		.pipe($.concat('main.css'))
-		.pipe($.autoprefixer({
-            browsers: ['last 4 versions']
-        }))
+		.pipe($.autoprefixer())
         .pipe($.cleanCSS({
 		    	level: 2
 		    }))
